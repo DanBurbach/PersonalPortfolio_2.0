@@ -1,0 +1,16 @@
+.container_projectsInfo {
+    background-color: #888
+}
+
+.projectsInfo_parent {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 3em 0em;
+}
+
+.projectsInfo_child {
+    display: inline-block;
+    top: 1em;
+}
