@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function InterestsInfo(props) {
+function AboutInfo(props) {
   return (
     <div>
-      <div class="container">
+      <div className="container">
         <div>
           <br />
           <h3>{props.title}</h3>
@@ -31,7 +31,7 @@ function InterestsInfo(props) {
   );
 }
 
-InterestsInfo.propTypes = {
+AboutInfo.propTypes = {
   title: PropTypes.string.isRequired,
   who: PropTypes.string.isRequired,
   where: PropTypes.string.isRequired,
@@ -40,4 +40,4 @@ InterestsInfo.propTypes = {
   focus: PropTypes.string.isRequired
 };
 
-export default InterestsInfo;
+export default AboutInfo;

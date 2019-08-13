@@ -1,0 +1,278 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ecf0f1;
+}
+
+button {
+    width: 86px;
+    height: 40px;
+    background-color: #f9cb11;
+    border: none;
+    border-radius:6px;
+    position:absolute;
+    left: 0;
+    cursor:pointer;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: all 0.25s ease;    
+}
+
+.menu {
+    background: #34495e;
+    height: 100vh;
+    width: 250px;
+    opacity:0; 
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    transition: all 0.25s ease;
+    animation: fadeInRight .25s ease forwards;
+    opacity:0;
+}
+
+li:hover {
+    opacity: 0.8;
+    transition: all 0.25s ease;
+    background: #000;
+    cursor: pointer;
+}
+
+
+.active {
+opacity:1;
+visibility: visible;
+transition: all 0.25s ease;
+transform: translateX(0);
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+} */
+
+
+body {
+    margin: 0;
+    /* height: 100vh;
+    max-height: 100vh; */
+}
+
+button {
+    outline: none;
+}
+
+/* p {
+    font-size: 1em;
+    color: darkgrey;
+    font-family: "Ubuntu Mono", monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+} */
+
+.menu {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .40s;
+    opacity: 0;
+    width: 0px;
+}
+
+.menuBtn {
+    width: 8em;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    transform: translateX(-50%);
+    transition: .400s;
+    border: none;
+    background: indigo;
+    border-bottom-right-radius: 2em;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.menuBtn span {
+    width: 30%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    transition: .40s;
+}
+
+.menuBtn span:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menuBtn span:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menuBtn:hover {
+    background: purple;
+    transition: .40s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.menuOpened {
+    animation: .30s menuOpened linear;
+    height: 100vh;
+    width: 100%;
+    background: indigo;
+    opacity: 1;
+}
+
+@keyframes menuOpened {
+    from {
+        height: 0vh;
+        opacity: 0;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        width: 0;
+    }
+
+    to {
+        height: 100vh;
+        border-radius: 0%;
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.closeBtn {
+    width: 8em;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    transform: translateX(-50%);
+    transition: .400s;
+    border: none;
+    background: purple;
+    border-bottom-right-radius: 2em;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: block !important;
+    animation: .40s fade linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.closeBtn:hover {
+    transition: .40s;
+    background: crimson;
+}
+
+.closeBtn span {
+    width: 30%;
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .40s;
+    background: transparent;
+    transition: .40s;
+}
+
+.closeBtn span:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: .40s;
+}
+
+.closeBtn span:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    transition: .40s;
+}
