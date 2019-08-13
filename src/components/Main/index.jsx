@@ -14,21 +14,42 @@ class Main extends Component {
     super(props);
     this.state = {
     };
-
   }
+
+openNav() {
+  let nav = document.getElementById("myNav");
+  nav.style.height = "100%";
+}
+
+closeNav() {
+  let nav = document.getElementById("myNav");
+  nav.style.height = "0%";
+}
 
   render() {
       return (
         <div>
           <div className="main_container">
-            
-          <div className="menu">
-            <h1>-- Menu Opened --</h1>
-          </div>
-
-          <button type="button" className="menuBtn">
-            <span></span>
-          </button>
+            <div id="myNav" className="overlay">
+              <a
+                href="javascript:void(0)"
+                className="closebtn"
+                onClick={this.closeNav}
+              >
+                &times;
+              </a>
+              <div className="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+            <span style={{fontSize:"30px",cursor:"pointer"}}
+              onClick={this.openNav}
+            >
+              Menu
+            </span>
 
             <div className="main_group_wrapper">
               <div className="main_first">
