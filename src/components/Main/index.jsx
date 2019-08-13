@@ -61,6 +61,11 @@ handleContactNav = (event) => {
   render() {
       return (
         <div>
+            <div className="navMenu">
+                <div onClick={this.openNav}>
+                  Menu
+                </div>
+            </div>
           <div className="main_container">
             <div id="myNav" className="overlay">
               <div className="closebtn" onClick={this.closeNav}>
@@ -77,11 +82,6 @@ handleContactNav = (event) => {
               </div>
             </div>
 
-            <div id="navMenu">
-                <span onClick={this.openNav}>
-                  Menu
-                </span>
-            </div>
 
             <div className="main_group_wrapper">
               <div className="main_section">
