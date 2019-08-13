@@ -1,9 +1,12 @@
 .container_projectsInfo {
-    background-color: #888
+    padding: 2em;
+    background: radial-gradient(ellipse farthest-corner at 95% 95%,
+    white,
+    transparent
+  )
 }
 
 .projectsInfo_parent {
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
