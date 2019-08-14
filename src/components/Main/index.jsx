@@ -48,7 +48,7 @@ handleProjectsNav = (event) => {
 
 handleSkillsNav = (event) => {
   event.preventDefault();
-  document.getElementById("interests").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById("skills").scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
@@ -62,9 +62,11 @@ handleContactNav = (event) => {
       return (
         <div>
             <div className="navMenu">
-                <div onClick={this.openNav}>
+              <div className="navMenuBackground">
+                <div onMouseOver={this.openNav}>
                   Menu
                 </div>
+              </div>
             </div>
           <div className="main_container">
             <div id="myNav" className="overlay">
@@ -100,7 +102,7 @@ handleContactNav = (event) => {
                 </div>
               </div>
               <div className="main_section">
-                <div id="interests">
+                <div id="skills">
                   <Skills />
                 </div>
               </div>
@@ -110,6 +112,7 @@ handleContactNav = (event) => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       );
