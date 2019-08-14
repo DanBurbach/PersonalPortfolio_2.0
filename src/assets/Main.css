@@ -3,22 +3,61 @@
 }
 
 .navMenu {
-    padding: 0.25em;
+    position: fixed;
+    left: 0;
+    top: 10%;
     font-size: 3em;
     cursor: pointer;
-    fill:none;
-    animation: draw 5s linear infinite;
-    fill-opacity:1;
-    z-index: 2;
+    z-index: 12;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Safari */
+    -webkit-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Firefox */
+    -moz-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* IE */
+    -ms-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Opera */
+    -o-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
 }
 
-@keyframes draw {
-  0%{fill:#FF5EA0}
-  30%{fill:#C2ACE7}
-  66%{fill:#A7EC8A}
-  100%{fill:#FF5EA0 }
+.navMenu .navMenubackground {
+    z-index: 10;
+    width: 3em;
+    height: 9em;
+    border-color: white;
 }
 
+#intro {
+    padding-left: 3em;
+    height: 100vh;
+    width: 95vw;
+}
+
+#about {
+    padding-left: 3em;
+    height: 100vh;
+    width: 95vw;
+}
+
+#projects {
+    padding-left: 3em;
+    height: 200vh;
+    width: 95vw;
+}
+
+#skills {
+    padding-left: 3em;
+    height: 100vh;
+    width: 95vw;
+}
+
+#contact {
+    padding-left: 3em;
+    height: 100vh;
+    width: 95vw;
+}
 .overlay {
     height: 0%;
     width: 100%;
@@ -33,12 +72,12 @@
 }
 
 .overlay-content {
-    color: #818181;
+    color: #C9F227;
     font-size: 4em;
     text-decoration: none;
     display: block;
     position: relative;
-    top: 25%;
+    top: 10%;
     width: 100%;
     text-align: center;
     cursor: pointer;
@@ -49,7 +88,7 @@
 
 .overlay-content ol:hover,
 .overlay-content ol:focus {
-    color: #f1f1f1;
+    color: rgb(100, 119, 22);
 }
 
 .overlay .closebtn {

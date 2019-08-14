@@ -1,19 +1,7 @@
 .container_projectsInfo {
-    padding: 2em;
+    padding: 1em;
     background: radial-gradient(ellipse farthest-corner at 95% 95%,
     white,
     transparent
   )
-}
-
-.projectsInfo_parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0em 3em 0em;
-}
-
-.projectsInfo_child {
-    display: inline-block;
-    top: 1em;
 }
