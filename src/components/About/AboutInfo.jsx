@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function AboutInfo(props) {
   return (
     <div>
-      <div className="container">
+      <div className="container_about">
         <div>
           <br />
           <h3>{props.title}</h3>

@@ -88,7 +88,7 @@ handleContactNav = (event) => {
                   <Intro />
                 </div>
               </div>
-              <div id="content-spacing" />
+              <div id="content-spacing"/>
               <div className="main_section">
                 <div id="about">
                   <About />

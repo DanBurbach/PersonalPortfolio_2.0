@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+import Welcome from './Welcome';
 import "./../../assets/Intro.css";
 
 class Intro extends Component {
@@ -9,9 +11,8 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="intro_container">
-        <h1>Welcome</h1>
-        <h1 id="shadow">Welcome</h1>
+      <div className='container_intro'>
+        <Welcome/>
       </div>
     );
   }
