@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import Intro from '../Intro';
 import About from '../About';
-import Projects from '../Projects';
 import Skills from '../Skills';
+import Projects from '../Projects';
 import Contact from '../Contact';
 
 import "./../../assets/Main.css";
@@ -40,15 +40,15 @@ handleAboutNav = (event) => {
   this.closeNav();
 }
 
-handleProjectsNav = (event) => {
-  event.preventDefault();
-  document.getElementById("projects").scrollIntoView({ behavior: 'smooth', block: 'center' });
-  this.closeNav();
-}
-
 handleSkillsNav = (event) => {
   event.preventDefault();
   document.getElementById("skills").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  this.closeNav();
+}
+
+handleProjectsNav = (event) => {
+  event.preventDefault();
+  document.getElementById("projects").scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
@@ -61,13 +61,11 @@ handleContactNav = (event) => {
   render() {
       return (
         <div>
+          <div className="navMenuBackground">
             <div className="navMenu">
-              <div className="navMenuBackground">
-                <div onMouseOver={this.openNav}>
-                  Menu
-                </div>
-              </div>
+              <div onMouseOver={this.openNav}>Menu</div>
             </div>
+          </div>
           <div className="main_container">
             <div id="myNav" className="overlay">
               <div className="closebtn" onClick={this.closeNav}>
@@ -77,13 +75,12 @@ handleContactNav = (event) => {
                 <ul>
                   <ol onClick={this.handleMainNav}>Main</ol>
                   <ol onClick={this.handleAboutNav}>About</ol>
-                  <ol onClick={this.handleProjectsNav}>Projects</ol>
                   <ol onClick={this.handleSkillsNav}>Skills</ol>
+                  <ol onClick={this.handleProjectsNav}>Projects</ol>
                   <ol onClick={this.handleContactNav}>Contact</ol>
                 </ul>
               </div>
             </div>
-
 
             <div className="main_group_wrapper">
               <div className="main_section">
@@ -91,28 +88,31 @@ handleContactNav = (event) => {
                   <Intro />
                 </div>
               </div>
+              <div id="content-spacing" />
               <div className="main_section">
                 <div id="about">
                   <About />
                 </div>
               </div>
-              <div className="main_section">
-                <div id="projects">
-                  <Projects />
-                </div>
-              </div>
+              <div id="content-spacing" />{" "}
               <div className="main_section">
                 <div id="skills">
                   <Skills />
                 </div>
               </div>
+              <div id="content-spacing" />
+              <div className="main_section">
+                <div id="projects">
+                  <Projects />
+                </div>
+              </div>
+              <div id="content-spacing" />
               <div className="main_section">
                 <div id="contact">
                   <Contact />
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       );

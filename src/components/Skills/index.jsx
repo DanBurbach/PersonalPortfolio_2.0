@@ -9,24 +9,22 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className='skillsMain'>
+      <div className="skillsMain">
         <div>
-          Comfortable with:
-          <ul>
-            <li>HTML / CSS3</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Photoshop/Illustrator</li>
-            <li>Bootstrap</li>
-            <li>Agile Methods and Project Practices</li>
-          </ul>
+          <h2>Comfortable with:</h2>
+            <div className="graph bar1">HTML / CSS3</div>
+            <div className="graph bar2">JavaScript</div>
+            <div className="graph bar3">React.js</div>
+            <div className="graph bar4">Photoshop/Illustrator</div>
+            <div className="graph bar5">Bootstrap</div>
+            <div className="graph bar6">
+              Agile Methods and Project Practices
+            </div>
         </div>
         <div>
-          Experience with:
-          <ul>
-            <li>Redux</li>
-            <li>Google Firebase</li>
-          </ul>
+          <h2>Experience with:</h2>
+            <div>Redux</div>
+            <div>Google Firebase</div>
         </div>
       </div>
     );

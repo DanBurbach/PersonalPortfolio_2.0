@@ -9,7 +9,12 @@ class Intro extends Component {
   render() {
     return (
       <div>
-        Intro
+        <p>
+          <h1>Daniel Burbach</h1>
+        </p>
+        <p>
+          <h3>Elevator Pitch</h3>
+        </p>
       </div>
     );
   }

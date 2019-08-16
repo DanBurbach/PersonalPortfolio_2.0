@@ -1,14 +1,15 @@
-.main_container {
+/* .main_container {
     padding: 2em;
-}
+} */
 
 .navMenu {
     position: fixed;
-    left: 0;
+    left: 0.25em;
     top: 10%;
-    font-size: 3em;
+    font-size: 2em;
     cursor: pointer;
     z-index: 12;
+    
     font-weight: bold;
     text-transform: uppercase;
     transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
@@ -22,42 +23,88 @@
     -o-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
 }
 
-.navMenu .navMenubackground {
+.navMenuBackground {
+    position: fixed;
+    color: #fff;
     z-index: 10;
-    width: 3em;
-    height: 9em;
-    border-color: white;
+    top: 1em;
+    left: -1em;
+    width: 5em;
+    height: 9.5em;
+    border-radius: 1em;
+    border:0px solid #000;
+    text-shadow:-3px 0px 4px #000;
+    box-shadow: -3px 0px 4px 4px hsla(0, 0%, 0%, 0.66);
+    background-image: linear-gradient(120deg, rgb(78, 9, 9), rgb(151, 10, 10), rgb(212, 20, 20), rgb(160, 18, 18));
+    background-size: 500% 500%;
+    animation: menuAnimation 5s infinite;
+}
+
+@keyframes menuAnimation{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
 }
 
 #intro {
-    padding-left: 3em;
+    padding-left: 5em;
     height: 100vh;
     width: 95vw;
 }
 
 #about {
-    padding-left: 3em;
+    padding-left: 5em;
     height: 100vh;
     width: 95vw;
 }
 
 #projects {
-    padding-left: 3em;
+    padding-left: 5em;
     height: 200vh;
     width: 95vw;
 }
 
 #skills {
-    padding-left: 3em;
+    padding-left: 5em;
     height: 100vh;
     width: 95vw;
 }
 
 #contact {
-    padding-left: 3em;
+    padding-left: 5em;
     height: 100vh;
     width: 95vw;
 }
+
+#content-spacing {
+    height: 10vh;
+    width: 200vw;
+    left: 0;
+    animation: spacingAnimation 10s infinite;
+    background-size: 500% 500%;
+    background-image: linear-gradient(120deg, rgb(23, 117, 172), rgb(14, 81, 126), rgb(0, 46, 145), rgb(56, 162, 248));
+}
+
+@keyframes spacingAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .overlay {
     height: 0%;
     width: 100%;
