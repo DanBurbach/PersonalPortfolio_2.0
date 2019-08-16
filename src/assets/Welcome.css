@@ -1,5 +1,5 @@
 .welcome_container h1 {
-    top: 20vh;
+    top: -32vh;
     color: #ecf0f1;
     font-family: 'Montserrat',
         sans-serif;
@@ -7,18 +7,46 @@
     position: absolute;
     text-transform: uppercase;
     width: 100%;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.05em;
     font-size: 20vh;
     height: 20vh;
     line-height: 20vh;
     text-align: center;
     background: transparent;
+    text-shadow: 2px -1px 0 #f8f8f8,
+        2px -2px 0 #b3b3b3,
+        3px -3px 0 #838383,
+        4px -4px 0 #8b8b8b,
+        5px -5px 0 #696969,
+        6px -6px 0 #494949,
+        7px -7px 0 #3a3a3a,
+        8px -8px 0 #353535,
+        9px -9px 0 #252525;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: skewY(1deg);
+    -webkit-transform: skewY(1deg);
+    -ms-transform: skewY(1deg);
+    -o-transform: skewY(1deg);
+    transform: skewY(1deg);
 }
 
 .welcome_container h1:first-child {
-    top: 22.5vh;
+    top: -32.5vh;
+    position: absolute;
     color: rgba(0, 0, 0, 0);
-    transform: rotateX(65deg);
-    text-shadow: #000000 0 0 10px;
+    transform: rotateX(70deg);
+    text-shadow: #000000 0 0 5px;
+    transform-origin: bottom right;
+        -moz-transform-origin: bottom right;
+        -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+    transform: skewX(-18deg);
+        -moz-transform: skewX(-18deg);
+        -webkit-transform: skewX(-18deg);
+        -ms-transform: skewX(-18deg);
+        -o-transform: skewX(-18deg);
     background: transparent;
 }
