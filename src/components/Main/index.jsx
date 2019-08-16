@@ -66,7 +66,6 @@ handleContactNav = (event) => {
               <div onMouseOver={this.openNav}>Menu</div>
             </div>
           </div>
-          <div className="main_container">
             <div id="myNav" className="overlay">
               <div className="closebtn" onClick={this.closeNav}>
                 &times;
@@ -81,7 +80,7 @@ handleContactNav = (event) => {
                 </ul>
               </div>
             </div>
-
+          <div className="main_container">
             <div className="main_group_wrapper">
               <div className="main_section">
                 <div id="intro">

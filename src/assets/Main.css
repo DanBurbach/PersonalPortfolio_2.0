@@ -1,53 +1,3 @@
-.navMenu {
-    position: fixed;
-    left: 0.25em;
-    top: 10%;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 15;
-    
-    font-weight: bold;
-    text-transform: uppercase;
-    transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
-    /* Safari */
-    -webkit-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
-    /* Firefox */
-    -moz-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
-    /* IE */
-    -ms-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
-    /* Opera */
-    -o-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
-}
-
-.navMenuBackground {
-    position: fixed;
-    color: #fff;
-    z-index: 15;
-    top: 1em;
-    left: -1em;
-    width: 5em;
-    height: 9.5em;
-    border-radius: 1em;
-    border:0px solid #000;
-    text-shadow:-3px 0px 4px #000;
-    box-shadow: -3px 0px 4px 4px hsla(0, 0%, 0%, 0.66);
-    background-image: linear-gradient(120deg, rgb(78, 9, 9), rgb(151, 10, 10), rgb(212, 20, 20), rgb(160, 18, 18));
-    background-size: 500% 500%;
-    animation: menuAnimation 5s infinite;
-}
-
-@keyframes menuAnimation{
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100%{
-      background-position: 0% 50%;
-    }
-}
-
 #intro {
     padding-left: 3em;
     height: 100vh;
@@ -102,6 +52,57 @@
         background-position: 0% 50%;
     }
 }
+
+.navMenu {
+    position: fixed;
+    left: 0.25em;
+    top: 10%;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 15;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Safari */
+    -webkit-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Firefox */
+    -moz-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* IE */
+    -ms-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+    /* Opera */
+    -o-transform: rotate(-90deg) translateY(-0.75em) translateX(0.5em);
+}
+
+.navMenuBackground {
+    position: fixed;
+    color: #fff;
+    z-index: 15;
+    top: 1em;
+    left: -1em;
+    width: 5em;
+    height: 9.5em;
+    border-radius: 1em;
+    border:0px solid #000;
+    text-shadow:-3px 0px 4px #000;
+    box-shadow: -3px 0px 4px 4px hsla(0, 0%, 0%, 0.66);
+    background-image: linear-gradient(120deg, rgb(78, 9, 9), rgb(151, 10, 10), rgb(212, 20, 20), rgb(160, 18, 18));
+    background-size: 500% 500%;
+    animation: menuAnimation 5s infinite;
+}
+
+@keyframes menuAnimation{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
+
 
 .overlay {
     height: 0%;
