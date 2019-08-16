@@ -1,7 +1,7 @@
 .container_projectsInfo {
     padding: 1em;
     background: radial-gradient(ellipse farthest-corner at 95% 95%,
-    white,
+    rgb(102, 102, 156),
     transparent
   )
 }
