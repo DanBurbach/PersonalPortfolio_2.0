@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./../../assets/Intro.css";
 
 class Intro extends Component {
   constructor(props) {
@@ -8,13 +9,9 @@ class Intro extends Component {
 
   render() {
     return (
-      <div>
-        <p>
-          <h1>Daniel Burbach</h1>
-        </p>
-        <p>
-          <h3>Elevator Pitch</h3>
-        </p>
+      <div className="intro_container">
+        <h1>Welcome</h1>
+        <h1 id="shadow">Welcome</h1>
       </div>
     );
   }
