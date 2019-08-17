@@ -5,8 +5,10 @@ import About from '../About';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Contact from '../Contact';
+import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
 
 import "./../../assets/Main.css";
+
 
 
 class Main extends Component {
@@ -61,56 +63,72 @@ handleContactNav = (event) => {
   render() {
       return (
         <div>
+          <ParticlesDisplay />
           <div className="navMenuBackground">
             <div className="navMenu">
               <div onClick={this.openNav}>Menu</div>
             </div>
           </div>
-            <div id="myNav" className="overlay">
-              <div className="closebtn" onClick={this.closeNav}>
-                &times;
-              </div>
-              <div className="overlay-content">
-                <ul>
-                  <ol onClick={this.handleMainNav}>Main</ol>
-                  <ol onClick={this.handleAboutNav}>About</ol>
-                  <ol onClick={this.handleSkillsNav}>Skills</ol>
-                  <ol onClick={this.handleProjectsNav}>Projects</ol>
-                  <ol onClick={this.handleContactNav}>Contact</ol>
-                </ul>
-              </div>
+          <div id="myNav" className="overlay">
+            <div className="closebtn" onClick={this.closeNav}>
+              &times;
             </div>
+            <div className="overlay-content">
+              <ul>
+                <ol onClick={this.handleMainNav}>Main</ol>
+                <ol onClick={this.handleAboutNav}>About</ol>
+                <ol onClick={this.handleSkillsNav}>Skills</ol>
+                <ol onClick={this.handleProjectsNav}>Projects</ol>
+                <ol onClick={this.handleContactNav}>Contact</ol>
+              </ul>
+            </div>
+          </div>
           <div className="main_container">
             <div className="main_group_wrapper">
+
               <div className="main_section">
                 <div id="intro">
                   <Intro />
                 </div>
               </div>
-              <div id="content-spacing"/>
+
+              <div id="content-spacing" />
+
               <div className="main_section">
                 <div id="about">
-                  <About />
+                  <div className="about_grid_left">
+                    <div id='about_image'></div>
+                  </div>
+                  <div className="about_grid_right">
+                    <About />
+                  </div>
                 </div>
               </div>
-              <div id="content-spacing" />{" "}
+
+              <div id="content-spacing" />
+
               <div className="main_section">
                 <div id="skills">
                   <Skills />
                 </div>
               </div>
+
               <div id="content-spacing" />
+
               <div className="main_section">
                 <div id="projects">
                   <Projects />
                 </div>
               </div>
+
               <div id="content-spacing" />
+
               <div className="main_section">
                 <div id="contact">
                   <Contact />
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

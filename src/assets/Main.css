@@ -1,20 +1,30 @@
+.main_group_wrapper {
+    display: grid;
+}
+
 #intro {
     height: 100vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, #140f43 0%, #2b3ac0 55%, #4856d6 57%);
-    background-size: 100% 100%; */
 }
 
 #about {
     padding-left: 5em;
     height: 100vh;
     width: 90vw;
+    display:grid;
+    grid-template-columns: 40em 50em
+}
+
+#about_image {
+    border-radius: 50%;
+    width: 10em;
+    background-color: skyblue;
 }
 
 #projects {
     padding-left: 5em;
     height: 200vh;
-    width: 95vw;
+    width: 91.5vw;
 }
 
 #skills {
@@ -33,23 +43,8 @@
     height: 20vh;
     width: 100vw;
     left: 0;
-    animation: spacingAnimation 10s infinite;
-    background-size: 500% 500%;
-    background-image: linear-gradient(120deg, rgb(23, 117, 172), rgb(14, 81, 126), rgb(0, 46, 145), rgb(56, 162, 248));
-}
+    background: linear-gradient(#060329, #0f0191, #080050,transparent);
 
-@keyframes spacingAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .navMenu {

@@ -1,12 +1,12 @@
 .welcome_container h1 {
-    top: -32vh;
+    top: 11vh;
     color: #ecf0f1;
     font-family: 'Montserrat',
         sans-serif;
     font-weight: 900;
     position: absolute;
     text-transform: uppercase;
-    width: 100%;
+    width: 100vw;
     letter-spacing: -0.05em;
     font-size: 20vh;
     height: 20vh;
@@ -34,7 +34,7 @@
 }
 
 .welcome_container h1:first-child {
-    top: -32.5vh;
+    top: 11.5vh;
     position: absolute;
     color: rgba(0, 0, 0, 0);
     transform: rotateX(70deg);
