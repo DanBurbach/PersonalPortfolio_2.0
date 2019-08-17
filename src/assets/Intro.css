@@ -3,6 +3,13 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.parallax_container {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
 }
 
 .parallax_layer {
@@ -14,43 +21,35 @@
 }
 
 .p1 {
-    transform: translateZ(-5px) scale(3);
-    width: 100vw;
-    height: 25vh;
-    top: 0;
+    transform: translateZ(-5px) scale(4);
+    width: 1000vw;
+    height: 30em;
+    top: -100em;
     background: linear-gradient(#0e0b35, #1a1355);
 }
 .p2{
-    transform: translateZ(-3px) scale(2);
+    transform: translateZ(-4px) scale(5);
     width: 100vw;
-    height: 25vh;
-    top: 15em;
+    height: 20em;
+    top: -40em;
     background: linear-gradient(#140f43, #2a1e91);
 }
 .p3{
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-3px) scale(5);
     width: 100vw;
-    height: 5vh;
-    top: 25em;
+    height: 12em;
+    top: 22em;
     background-image: linear-gradient(#2a1e91, #4a39e4);
 }
 .p4{
-    transform: translateZ(0px);
+    transform: translateZ(-2px) scale(2);
     width: 100vw;
-    height: 10vh;
-    top: 50em;
+    top: 35em;
 }
 .p5{
-    transform: translateZ(1px) scale(2);
+    transform: translateZ(-1px) scale(5);
     width: 100vw;
-    height: 5vh;
-    bottom: 40em;
-    background-image: linear-gradient(#4a39e4, #2514c5);
-}
-.p6{
-    transform: translateZ(3px) scale(2);
-        width: 100vw;
-        height: 25vh;
-        bottom: 0;
-    background-image: linear-gradient(#2514c5,#251d70);
+    height: 30em;
+    top: 88em;
+    background-image: linear-gradient(#4a39e4, #251d70);
 }
