@@ -63,7 +63,7 @@ handleContactNav = (event) => {
         <div>
           <div className="navMenuBackground">
             <div className="navMenu">
-              <div onMouseOver={this.openNav}>Menu</div>
+              <div onClick={this.openNav}>Menu</div>
             </div>
           </div>
             <div id="myNav" className="overlay">
