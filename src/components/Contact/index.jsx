@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ContactSheet from "./ContactSheet.jsx";
 
 class Contact extends Component {
   constructor(props) {
@@ -7,7 +8,11 @@ class Contact extends Component {
   }
 
   render() {
-    return <div>Contact</div>;
+    return (
+      <div>
+        <ContactSheet />
+      </div>
+    )
   }
 }
 export default Contact;
