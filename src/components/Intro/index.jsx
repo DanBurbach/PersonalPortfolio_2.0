@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Welcome from './Welcome';
+import DownArrow from './DownArrow';
 import './../../assets/Intro.css';
 
 class Intro extends Component {
@@ -13,6 +14,7 @@ class Intro extends Component {
     return (
       <div>
         <Welcome />
+        <DownArrow/>
       </div>
     );
   }
