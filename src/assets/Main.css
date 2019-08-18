@@ -1,7 +1,3 @@
-.main_group_wrapper {
-    display: grid;
-}
-
 #intro {
     height: 100vh;
     width: 100vw;
@@ -9,17 +5,18 @@
 
 #about {
     padding-left: 5em;
+    padding-right: 5em;
     height: 100vh;
     width: 90vw;
-    display:grid;
-    grid-template-columns: 40em 50em
+    display: grid;
+    grid-template-columns: 30em 30em;
 }
 
-#about_image {
+/* #about_image {
     border-radius: 50%;
-    width: 10em;
+    width: 2em;
     background-color: skyblue;
-}
+} */
 
 #projects {
     padding-left: 5em;
@@ -99,8 +96,8 @@
 
 
 .overlay {
-    height: 0%;
-    width: 100%;
+    height: 100%;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;

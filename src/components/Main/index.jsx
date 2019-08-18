@@ -21,13 +21,11 @@ class Main extends Component {
   }
 
 openNav() {
-  const nav = document.getElementById("myNav");
-  nav.style.height = "100%";
+  document.getElementById("myNav").style.width = "100%";
 }
 
 closeNav() {
-  const nav = document.getElementById("myNav");
-  nav.style.height = "0%";
+  document.getElementById("myNav").style.width = "0%";
 }
 
 handleMainNav = (event) => {
@@ -128,7 +126,7 @@ handleContactNav = (event) => {
                   <Contact />
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
