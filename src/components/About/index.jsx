@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AboutInfo from './AboutInfo';
 
+
 const masterPersonalList = [
   {
     title: "How do you describe yourself?",
@@ -26,7 +27,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        {masterPersonalList.map((personalinfo, index) =>
+        {masterPersonalList.map((personalinfo, index) => (
           <AboutInfo
             title={personalinfo.title}
             who={personalinfo.who}
@@ -34,8 +35,9 @@ class About extends Component {
             thoughts={personalinfo.thoughts}
             creativity={personalinfo.creativity}
             focus={personalinfo.focus}
-            key={index}/>
-        )}
+            key={index}
+          />
+        ))}
       </div>
     );
   }
