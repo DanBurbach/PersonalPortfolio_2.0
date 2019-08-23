@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form from "./ContactSheet.jsx";
+import Form from "./Form.jsx";
 
 const REACT_APP_API =
   "http://localhost:3001/personalwebpage/api/contact/index.php";
