@@ -10,6 +10,7 @@
     width: 90vw;
     display: grid;
     grid-template-columns: 30em 30em;
+    background: transparent;
 }
 
 /* #about_image {
@@ -22,18 +23,21 @@
     padding-left: 5em;
     height: 200vh;
     width: 91.5vw;
+    background: transparent;
 }
 
 #skills {
     padding-left: 5em;
     height: 100vh;
     width: 95vw;
+    background: transparent;
 }
 
 #contact {
     padding-left: 5em;
     height: 100vh;
     width: 95vw;
+    background: transparent;
 }
 
 #content-spacing {
@@ -41,7 +45,6 @@
     width: 100vw;
     left: 0;
     background: linear-gradient(#060329, #0f0191, #080050,transparent);
-
 }
 
 .navMenu {

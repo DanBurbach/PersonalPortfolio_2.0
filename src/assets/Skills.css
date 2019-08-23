@@ -2,18 +2,18 @@
     padding: 2em;
     width: calc(100% - 40px);
     width: 100%;
-    max-width: 800px;
+    max-width: 50em;
     margin: 0 auto;
 }
 
 .graph {
-    height: 30px;
-    max-width: 800px;
-    margin: 0 auto 10px auto;
-    line-height: 30px;
-    font-size: 16px;
+    height: 2em;
+    max-width: 50em;
+    margin: 0 auto 0.6em auto;
+    line-height: 2em;
+    font-size: 1em;
     color: white;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0.8em;
     position: relative;
 }
 
@@ -31,7 +31,7 @@
 .graph::after {
     content: '';
     background: #2ecc71;
-    height: 30px;
+    height: 2em;
     transition: 0.7s;
     display: block;
     width: 100%;
