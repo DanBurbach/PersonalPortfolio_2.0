@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
-import "./../../assets/ContactSheet.css";
+import "./../../assets/Form.css";
 
-const API_PATH =
-  "http://localhost:1992/react-contact-form/api/contact/index.php";
+const REACT_APP_API =
+  "http://localhost:3001/personalwebpage/api/contact/index.php";
 
-class ContactSheet extends Component {
+class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,67 +19,86 @@ class ContactSheet extends Component {
       error: null
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleFormChange = this.handleFormChange.bind(this);
   }
 
-  handleFormSubmit = event => {
+  handleFormSubmit = async (event) => {
     event.preventDefault();
     axios({
       method: "post",
-      url: `${API_PATH}`,
+      url: `${REACT_APP_API}`,
+      withCredentials: false,
       headers: { "content-type": "application/json" },
       data: this.state
     })
       .then(result => {
-        this.setState({
-          mailSent: result.data.sent
-        });
+        if (result.data.sent) {
+          this.setState({
+            mailSent: result.data.sent
+          });
+          this.setState({ error: false });
+        } else {
+          this.setState({ error: true });
+        }
       })
       .catch(error => this.setState({ error: error.message }));
   };
 
+  handleFormChange = (event) => {
+    this.setState({[event.target.name]: event.target.value})
+  };
+
   render() {
+    const { successMessage, errorMessage, fieldsConfig } = this.props.config;
     return (
       <div className="container_contactMe">
         <p>Contact Me</p>
         <div>
-          <form action="/action_page.php">
-            <label>First Name</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label>Last Name</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-
-            <label>Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-
-            <label>Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-            />
+          <form action="#">
+            {fieldsConfig &&
+              fieldsConfig.map(field => {
+                return (
+                  <React.Fragment key={field.id}>
+                    {field.type !== "textarea" ? (
+                      <React.Fragment>
+                        <label>{field.label}</label>
+                        <input
+                          type={field.type}
+                          className={field.klassName}
+                          placeholder={field.placeholder}
+                          value={field.name}
+                          onChange={e =>
+                            this.handleFormChange(e, field.fieldName)
+                          }
+                        />
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <label>{field.label}</label>
+                        <textarea
+                          className={field.klassName}
+                          placeholder={field.placeholder}
+                          onChange={event =>
+                            this.handleFormChange(event, field.fieldName)
+                          }
+                          value={field.name}
+                        />
+                      </React.Fragment>
+                    )}
+                  </React.Fragment>
+                );
+              })}
             <input
               type="submit"
-              onClick={this.handleFormSubmit}
+              onClick={e => this.handleFormSubmit(e)}
               value="Submit"
             />
             <div>
               {this.state.mailSent && (
-                <div>Thank you for contcting me.</div>
+                <div className="success">{successMessage}</div>
+              )}
+              {this.state.error && (
+                <div className="error">{errorMessage}</div>
               )}
             </div>
           </form>
@@ -87,4 +107,9 @@ class ContactSheet extends Component {
     );
   }
 }
-export default ContactSheet;
+
+Form.propTypes = {
+  config: PropTypes.object.isRequired
+};
+
+export default Form;
