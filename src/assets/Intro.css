@@ -1,3 +1,55 @@
+.firstline {
+    top: 43.1vh;
+    border: 0;
+    background-image: linear-gradient(120deg, rgb(78, 9, 9), rgb(151, 10, 10), rgb(212, 20, 20), rgb(160, 18, 18));
+    background-size: 500% 500%;
+    animation: lineAnimation 5s infinite;
+    position: absolute;
+    width: 85vw;
+    left: 9%;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: skewY(1deg);
+    -webkit-transform: skewY(1deg);
+    -ms-transform: skewY(1deg);
+    -o-transform: skewY(1deg);
+    transform: skewY(1deg);
+}
+
+.firstline:first-child {
+    top: 41.5vh;
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    transform: rotateX(70deg);
+    text-shadow: #000000 0 0 5px;
+    transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    transform: skewX(-18deg);
+    -moz-transform: skewX(-18deg);
+    -webkit-transform: skewX(-18deg);
+    -ms-transform: skewX(-18deg);
+    -o-transform: skewX(-18deg);
+}
+
+@keyframes lineAnimation{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
+
 /* .parallax {
     perspective: 1px;
     height: 100vh;
