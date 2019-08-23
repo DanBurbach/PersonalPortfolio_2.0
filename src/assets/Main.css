@@ -1,16 +1,21 @@
-#intro {
+.main_container {
+    z-index: 10;
+}
+
+.intro {
     height: 100vh;
     width: 100vw;
 }
 
-#about {
+.about {
+    color: #ffffff;
     padding-left: 5em;
     padding-right: 5em;
     height: 100vh;
-    width: 90vw;
+    width: 100vw;
     display: grid;
     grid-template-columns: 30em 30em;
-    background: transparent;
+    background: linear-gradient(#080b1b, #1400cc, skyblue);
 }
 
 /* #about_image {
@@ -19,24 +24,26 @@
     background-color: skyblue;
 } */
 
-#projects {
+.projects {
     padding-left: 5em;
+    padding-right: 5em;
     height: 200vh;
-    width: 91.5vw;
+    width: 100vw;
+    background: transparent;
+    
+}
+
+.skills {
+    padding-left: 5em;
+    height: 100vh;
+    width: 100vw;
     background: transparent;
 }
 
-#skills {
+.contact {
     padding-left: 5em;
     height: 100vh;
-    width: 95vw;
-    background: transparent;
-}
-
-#contact {
-    padding-left: 5em;
-    height: 100vh;
-    width: 95vw;
+    width: 100vw;
     background: transparent;
 }
 

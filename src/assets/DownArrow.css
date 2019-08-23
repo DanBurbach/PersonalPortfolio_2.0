@@ -3,7 +3,6 @@
   position:relative;
 }
 
-
 .arrow:before {
     content:"";
     position: absolute;

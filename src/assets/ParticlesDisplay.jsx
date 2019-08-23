@@ -7,8 +7,8 @@ function ParticlesDisplay() {
       style={{
         position: "absolute",
         top: 0,
-        width: "110%",
-        height: "100%",
+        width: "100vw",
+        height: "680vh",
         zIndex: "-1",
         backgroundColor: "#080b1b",
         backgroundRepeat: "repeat",
