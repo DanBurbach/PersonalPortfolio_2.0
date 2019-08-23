@@ -62,6 +62,7 @@ handleContactNav = (event) => {
       return (
         <div>
           <ParticlesDisplay />
+          <div className="main_container">
           <div className="navMenuBackground">
             <div className="navMenu">
               <div onClick={this.openNav}>Menu</div>
@@ -81,24 +82,27 @@ handleContactNav = (event) => {
               </ul>
             </div>
           </div>
-          <div className="main_container">
             <div className="main_group_wrapper">
 
               <div className="main_section">
                 <div id="intro">
-                  <Intro />
+                  <div className="intro">
+                    <Intro />
+                  </div>
                 </div>
               </div>
 
-              <div id="content-spacing" />
-
+              {/* <div id="content-spacing" /> */}
+              
               <div className="main_section">
                 <div id="about">
-                  <div className="about_grid_left">
-                    <div id='about_image'></div>
-                  </div>
-                  <div className="about_grid_right">
-                    <About />
+                  <div className="about">
+                    <div className="about_grid_left">
+                      <div id="about_image" />
+                    </div>
+                    <div className="about_grid_right">
+                      <About />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -106,8 +110,10 @@ handleContactNav = (event) => {
               <div id="content-spacing" />
 
               <div className="main_section">
-                <div id="skills">
-                  <Skills />
+                <div id='skills'>
+                  <div className="skills">
+                    <Skills />
+                  </div>
                 </div>
               </div>
 
@@ -115,7 +121,9 @@ handleContactNav = (event) => {
 
               <div className="main_section">
                 <div id="projects">
-                  <Projects />
+                  <div className="projects">
+                    <Projects />
+                  </div>
                 </div>
               </div>
 
@@ -123,10 +131,12 @@ handleContactNav = (event) => {
 
               <div className="main_section">
                 <div id="contact">
-                  <Contact />
+                  <div className="contact">
+                    <Contact />
+                  </div>
                 </div>
               </div>
-
+              
             </div>
           </div>
         </div>
