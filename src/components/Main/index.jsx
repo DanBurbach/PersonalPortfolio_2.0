@@ -6,8 +6,12 @@ import Skills from '../Skills';
 import Projects from '../Projects';
 import Contact from '../Contact';
 import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
+import Clouds from "./../Skills/Clouds";
+import Timeline from './../Skills/Timeline';
+
 
 import "./../../assets/Main.css";
+import "./../../assets/Timeline.css"
 
 
 
@@ -63,27 +67,26 @@ handleContactNav = (event) => {
         <div>
           <ParticlesDisplay />
           <div className="main_container">
-          <div className="navMenuBackground">
-            <div className="navMenu">
-              <div onClick={this.openNav}>Menu</div>
+            <div className="navMenuBackground">
+              <div className="navMenu">
+                <div onClick={this.openNav}>Menu</div>
+              </div>
             </div>
-          </div>
-          <div id="myNav" className="overlay">
-            <div className="closebtn" onClick={this.closeNav}>
-              &times;
+            <div id="myNav" className="overlay">
+              <div className="closebtn" onClick={this.closeNav}>
+                &times;
+              </div>
+              <div className="overlay-content">
+                <ul>
+                  <ol onClick={this.handleMainNav}>Main</ol>
+                  <ol onClick={this.handleAboutNav}>About</ol>
+                  <ol onClick={this.handleSkillsNav}>Skills</ol>
+                  <ol onClick={this.handleProjectsNav}>Projects</ol>
+                  <ol onClick={this.handleContactNav}>Contact</ol>
+                </ul>
+              </div>
             </div>
-            <div className="overlay-content">
-              <ul>
-                <ol onClick={this.handleMainNav}>Main</ol>
-                <ol onClick={this.handleAboutNav}>About</ol>
-                <ol onClick={this.handleSkillsNav}>Skills</ol>
-                <ol onClick={this.handleProjectsNav}>Projects</ol>
-                <ol onClick={this.handleContactNav}>Contact</ol>
-              </ul>
-            </div>
-          </div>
             <div className="main_group_wrapper">
-
               <div className="main_section">
                 <div id="intro">
                   <div className="intro">
@@ -93,7 +96,7 @@ handleContactNav = (event) => {
               </div>
 
               {/* <div id="content-spacing" /> */}
-              
+
               <div className="main_section">
                 <div id="about">
                   <div className="about">
@@ -107,17 +110,25 @@ handleContactNav = (event) => {
                 </div>
               </div>
 
-              <div id="content-spacing" />
+              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
-                <div id='skills'>
+                <div id="skills">
                   <div className="skills">
-                    <Skills />
+                    <div id="skill_list">
+                      <Skills />
+                    </div>
+                    <div id="clouds">
+                      <Clouds />
+                    </div>
+                    <div id='timeline'>
+                      <Timeline />
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div id="content-spacing" />
+              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
                 <div id="projects">
@@ -127,7 +138,7 @@ handleContactNav = (event) => {
                 </div>
               </div>
 
-              <div id="content-spacing" />
+              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
                 <div id="contact">
@@ -136,7 +147,6 @@ handleContactNav = (event) => {
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
