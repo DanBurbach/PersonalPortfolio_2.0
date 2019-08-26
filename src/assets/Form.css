@@ -1,17 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
 .container_contactMe {
+    
     max-width: 30vw;
-    margin: 3em auto;
-    background-color: lightgrey;
-    padding: 3em;
-}
-
-p {
-    text-align: center;
-    font-weight: 500;
+    /* margin: 3em auto; */
+    /* background-color: lightgrey; */
+    /* padding: 3em; */
+    /* bottom: 10em; */
 }
 
 input[type=text],
