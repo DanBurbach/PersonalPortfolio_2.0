@@ -14,7 +14,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 30em 30em;
-    background: linear-gradient(#080b1b, #1400cc, #87ceeb);
+    background: linear-gradient(#161e49, #1400cc, #87ceeb);
 }
 
 /* #about_image {
@@ -48,13 +48,27 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    top: -20vh;
+}
+
+#balloons {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: -20vh;
+    animation:drift 4s infinite alternate;
+}
+@keyframes drift {
+    to {
+        transform: translateY(-15%);
+    }
 }
 
 #timeline {
     display: inline-block;
     position: absolute;
     z-index: 4;
-    top: 205vh;
+    top: 105vh;
     right: 20vw;
 }
 

@@ -7,6 +7,7 @@ import Projects from '../Projects';
 import Contact from '../Contact';
 import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
 import Clouds from "./../Skills/Clouds";
+import Balloon from './../Skills/Balloon';
 import Timeline from './../Skills/Timeline';
 
 
@@ -52,7 +53,7 @@ handleSkillsNav = (event) => {
 
 handleProjectsNav = (event) => {
   event.preventDefault();
-  document.getElementById("projects").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById("projects").scrollIntoView({ behavior: 'smooth', block: 'start' });
   this.closeNav();
 }
 
@@ -106,6 +107,9 @@ handleContactNav = (event) => {
                     <div className="about_grid_right">
                       <About />
                     </div>
+                    <div id="timeline">
+                      <Timeline />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,11 +122,11 @@ handleContactNav = (event) => {
                     <div id="skill_list">
                       <Skills />
                     </div>
+                    <div id="balloons">
+                      <Balloon/>
+                    </div>
                     <div id="clouds">
                       <Clouds />
-                    </div>
-                    <div id='timeline'>
-                      <Timeline />
                     </div>
                   </div>
                 </div>
