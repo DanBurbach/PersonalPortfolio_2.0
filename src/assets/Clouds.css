@@ -95,9 +95,9 @@
 }
 
 .c7 {
-  -webkit-transform: scale(1.5);
-  opacity: 0.4;
-  -webkit-animation: moveclouds 50s linear infinite;
+  -webkit-transform: scale(10);
+  opacity: 0.3;
+  -webkit-animation: moveclouds 40s linear infinite;
   left: 30em;
   top: 7em;
 }
@@ -115,14 +115,14 @@
   opacity: 0.8;
   -webkit-animation: moveclouds 42s linear infinite;
   left: 30em;
-  top: 10em;
+  top: 28em;
   z-index: 1;
 }
 
 .c10 {
   opacity: 0.2;
   -webkit-transform: scale(0.75);
-  -webkit-animation: moveclouds 42s linear infinite;
+  -webkit-animation: moveclouds 32s linear infinite;
   left: 3em;
   top: 8em;
   z-index: 1;
@@ -135,18 +135,18 @@
 }
 
 .c11 {
-  opacity: 1;
-  -webkit-transform: scale(0.75);
-  -webkit-animation: moveclouds 47s linear infinite;
+  opacity: 0.23;
+  -webkit-transform: scale(8.75);
+  -webkit-animation: moveclouds 27s linear infinite;
   left: 33em;
-  top: 10.75em;
+  top: 38.75em;
   z-index: 1;
 }
 
 .c12 {
   opacity: 0.7;
   -webkit-transform: scale(0.75);
-  -webkit-animation: moveclouds 59s linear infinite;
+  -webkit-animation: moveclouds 29s linear infinite;
   left: 3em;
   top: 11.5em;
   z-index: 1;
@@ -157,7 +157,7 @@
   -webkit-transform: scale(3);
   -webkit-animation: moveclouds 78s linear infinite;
   left: 9em;
-  top: 2.5em;
+  top: 42.5em;
   z-index: 1;
 }
 
@@ -166,16 +166,16 @@
   -webkit-transform: scale(1.75);
   -webkit-animation: moveclouds 42s linear infinite;
   left: 22em;
-  top: 15.5em;
+  top: 25.5em;
   z-index: 1;
 }
 
 .c15 {
   opacity: 0.2;
-  -webkit-transform: scale(2.75);
+  -webkit-transform: scale(6.75);
   -webkit-animation: moveclouds 95s linear infinite;
   left: 16em;
-  top: 1.65em;
+  top: 2.65em;
   z-index: 1;
 }
 
@@ -190,7 +190,7 @@
   -webkit-transform: scale(0.75);
   -webkit-animation: moveclouds 59s linear infinite;
   left: 19em;
-  top: 22em;
+  top: 32em;
   z-index: 1;
 }
 
