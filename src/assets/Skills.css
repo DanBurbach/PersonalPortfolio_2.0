@@ -1,6 +1,6 @@
 .skillsMain {
     padding: 2em;
-    width: calc(100% - 40px);
+    width: calc(100% - 5em);
     width: 100%;
     max-width: 50em;
     margin: 0 auto;
@@ -8,13 +8,14 @@
 
 .graph {
     height: 2em;
-    max-width: 50em;
+    width: 60em;
     margin: 0 auto 0.6em auto;
     line-height: 2em;
     font-size: 1em;
     color: white;
     padding: 0 0 0 0.8em;
     position: relative;
+    z-index: 4;
 }
 
 .graph::before {
@@ -24,7 +25,7 @@
     left: 0;
     height: 30px;
     top: 0;
-    z-index: -3;
+    z-index: 4;
     background: transparent;
 }
 
