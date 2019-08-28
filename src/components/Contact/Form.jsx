@@ -47,7 +47,7 @@ class Form extends Component {
 
     const user_id = 'user_QJL88dkrzyOd3qgl27jCd';
     emailjs
-      .send("gmail", "template_F8WBtiXa", templateParams, user_id)
+      .send("gmail:dburbach", "template_F8WBtiXa", templateParams, user_id)
       .then(
         function(response) {
           toastr.success("Message sent successfully");
