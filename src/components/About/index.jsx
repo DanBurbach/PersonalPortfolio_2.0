@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AboutInfo from './AboutInfo';
 
+import './../../assets/About.css';
 
 const masterPersonalList = [
   {
@@ -26,7 +27,7 @@ class About extends Component {
 
   render() {
     return (
-      <div>
+      <div className='about_me'>
         {masterPersonalList.map((personalinfo, index) => (
           <AboutInfo
             title={personalinfo.title}
