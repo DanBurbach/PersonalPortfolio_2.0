@@ -1,3 +1,4 @@
+/* #1 balloon red */
 .balloon {
     font-size:0.25em;
     width:12em;
@@ -8,9 +9,9 @@
     animation:drift 1.25s infinite alternate;
     opacity: 1;
     -webkit-transform: scale(1);
-    -webkit-animation: moveclouds 35s linear infinite;
+    -webkit-animation: moveclouds 65s linear infinite;
     left: 16em;
-    top: 7.75em;
+    top: 19.75em;
     z-index: 1;
 }
 
@@ -19,6 +20,8 @@
     transform:translateY(-15%);
   }
 }
+
+
 
 .envelope {
     position: relative;
@@ -84,10 +87,229 @@
   background-color:rgb(219, 161, 86);
   left:calc((var(--n) - 1) * 0.6em);
   transform:rotate(calc(var(--r) * 7deg));
-  trasnform-origin:bottom;
+  transform-origin:bottom;
 }
 .basket span:nth-child(1){--n: 1; --r: -2;}
 .basket span:nth-child(2){--n: 2; --r: -1;}
 .basket span:nth-child(3){--n: 3; --r: 1;}
 .basket span:nth-child(4){--n: 4; --r: 2}
 
+/* #2 balloon blue ----------------------------------------*/
+.balloon_2 {
+  font-size: 0.4em;
+  width: 12em;
+  height: 19em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: drift 4.5s infinite alternate;
+  opacity: 0.5;
+  -webkit-transform: scale(0.35);
+  -webkit-animation: moveclouds 95s linear infinite;
+  left: 16em;
+  top: 18.75em;
+  z-index: 0.75;
+}
+
+
+.envelope_2 {
+  position: relative;
+  width: inherit;
+  height: 16em;
+  overflow: hidden;
+}
+
+.envelope_2 span {
+  position: absolute;
+  width: inherit;
+  height: 12em;
+  border-radius: 50%;
+  color: rgb(2, 0, 129);
+  background-color: currentColor;
+}
+
+.envelope_2 span::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10em 5.5em 0 5.5em;
+  border-style: solid;
+  border-color: currentColor transparent transparent transparent;
+  left: calc(50% - 5.5em);
+  top: 8.45em;
+}
+
+.envelope_2 span:nth-child(2) {
+  transform: scaleX(0.4);
+  filter: brightness(0.85) contrast(1.4);
+}
+
+.basket_2 {
+  position: relative;
+  width: 2em;
+  height: 3em;
+  scale: 0.25;
+}
+
+.basket_2::before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: 1.6em;
+  background-color: rgb(109, 67, 25);
+  bottom: 0px;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.basket_2::after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 0.3em;
+  background-color: rgb(51, 23, 3);
+  top: 1.3em;
+  left: calc((100% - 105%)/2);
+  border-radius: 0.3em;
+}
+
+.basket_2 span {
+  position: absolute;
+  width: 0.1em;
+  height: 1.5em;
+  background-color: rgb(214, 140, 44);
+  left: calc((var(--n) - 1) * 0.6em);
+  transform: rotate(calc(var(--r) * 7deg));
+  transform-origin: bottom;
+}
+
+.basket_2 span:nth-child(1) {
+  --n: 1;
+  --r: -2;
+}
+
+.basket_2 span:nth-child(2) {
+  --n: 2;
+  --r: -1;
+}
+
+.basket_2 span:nth-child(3) {
+  --n: 3;
+  --r: 1;
+}
+
+.basket_2 span:nth-child(4) {
+  --n: 4;
+  --r: 2
+}
+
+
+/* #3 balloon green -------------------------------------*/
+
+.balloon_3 {
+  font-size: 0.4em;
+  width: 12em;
+  height: 22em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: drift 35.5s infinite alternate;
+  opacity: 0.65;
+  -webkit-transform: scale(0.55);
+  -webkit-animation: moveclouds 65s linear infinite;
+  left: 16em;
+  top: 6em;
+  z-index: 0.95;
+}
+
+
+.envelope_3 {
+  position: relative;
+  width: inherit;
+  height: 16em;
+  overflow: hidden;
+}
+
+.envelope_3 span {
+  position: absolute;
+  width: inherit;
+  height: 12em;
+  border-radius: 50%;
+  color: rgb(0, 78, 4);
+  background-color: currentColor;
+}
+
+.envelope_3 span::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10em 5.5em 0 5.5em;
+  border-style: solid;
+  border-color: currentColor transparent transparent transparent;
+  left: calc(50% - 5.5em);
+  top: 8.45em;
+}
+
+.envelope_3 span:nth-child(2) {
+  transform: scaleX(0.4);
+  filter: brightness(0.85) contrast(1.4);
+}
+
+.basket_3 {
+  position: relative;
+  width: 2em;
+  height: 3em;
+  scale: 0.25;
+}
+
+.basket_3::before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: 1.6em;
+  background-color: rgb(109, 67, 25);
+  bottom: 0px;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.basket_3::after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 0.3em;
+  background-color: rgb(51, 23, 3);
+  top: 1.3em;
+  left: calc((100% - 105%)/2);
+  border-radius: 0.3em;
+}
+
+.basket_3 span {
+  position: absolute;
+  width: 0.1em;
+  height: 1.5em;
+  background-color: rgb(214, 140, 44);
+  left: calc((var(--n) - 1) * 0.6em);
+  transform: rotate(calc(var(--r) * 7deg));
+  transform-origin: bottom;
+}
+
+.basket_3 span:nth-child(1) {
+  --n: 1;
+  --r: -2;
+}
+
+.basket_3 span:nth-child(2) {
+  --n: 2;
+  --r: -1;
+}
+
+.basket_3 span:nth-child(3) {
+  --n: 3;
+  --r: 1;
+}
+
+.basket_3 span:nth-child(4) {
+  --n: 4;
+  --r: 2
+}
