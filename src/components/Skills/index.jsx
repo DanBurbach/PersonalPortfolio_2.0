@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Timeline from './Timeline';
 import "./../../assets/Skills.css";
 
 class Skills extends Component {
