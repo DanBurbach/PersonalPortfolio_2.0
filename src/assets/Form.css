@@ -1,10 +1,10 @@
 .container_contactMe {
     
     max-width: 30vw;
-    /* margin: 3em auto; */
-    /* background-color: lightgrey; */
-    /* padding: 3em; */
-    /* bottom: 10em; */
+    margin: 3em auto;
+    background-color: lightgrey;
+    padding: 3em;
+    bottom: 10em;
 }
 
 input[type=text],
@@ -37,13 +37,6 @@ input[type=submit]:hover {
 .success {
     margin: 2em 0;
     border: 1px solid green;
-    padding: 0.5em;
-    font-weight: 400;
-}
-
-.error {
-    margin: 2em 0;
-    border: 1px solid red;
     padding: 0.5em;
     font-weight: 400;
 }
