@@ -25,17 +25,17 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <button onclick="listView()">
+        <button onClick={this.handleListView}>
           <i className="fa fa-bars" /> List
         </button>
-        <button onclick="gridView()">
+        <button onClick={this.handleGridView}>
           <i className="fa fa-th-large" /> Grid
         </button>
 
         <div className="row">
           <div className="column" styles="background-color:#aaa;">
             <h2>Vacation Quiz</h2>
-            <img source="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/vacationquizscreenshot.png?raw=true" />
+            <img source="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/vacationquizscreenshot.png?raw=true" alt='Vacation Quiz'/>
             <p>
               A webpage using input from the user and radio buttons to
               provide recommended vacation sites
@@ -45,7 +45,7 @@ class Projects extends Component {
           </div>
           <div className="column" styles="background-color:#bbb;">
             <h2>Social Media App</h2>
-            <img source="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/SocialMediaGame.jpeg?raw=true" />
+            <img source="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/SocialMediaGame.jpeg?raw=true" alt='Social Media App'/>
             <p>
               A group project: This site was designed so that users can
               choose specific media types to view - Text, Image, or Video;
@@ -60,7 +60,7 @@ class Projects extends Component {
         <div className="row">
           <div className="column" styles="background-color:#ccc;">
             <h2>Battleship!</h2>
-            <img src="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/BattleShipRuby.png?raw=true" />
+            <img src="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/BattleShipRuby.png?raw=true" alt='Battleship!'/>
             <p>
               A team project build in Ruby, this is a simple game of
               battleship where two players try to sink one anothers ships.
@@ -70,7 +70,7 @@ class Projects extends Component {
           </div>
           <div className="column" styles="background-color:#ddd;">
             <h2>Blind Date Simulator</h2>
-            <img src="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/BlindDateSimulator.png?raw=true" />
+            <img src="https://github.com/DanBurbach/PersonalPortfolio/blob/master/src/assets/images/BlindDateSimulator.png?raw=true" alt='Blind Date Simulator'/>
             <p>
               A webpage that takes you through a blind date where you
               navigate your way through a series of questions, all leading
