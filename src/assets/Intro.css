@@ -7,7 +7,7 @@
     position: absolute;
     width: 85vw;
     left: 9%;
-    height: 1em;
+    height: calc(0.75vw + 0.25em);
     line-height: 1em;
     text-align: center;
     -moz-transform-origin: bottom left;
