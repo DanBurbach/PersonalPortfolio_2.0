@@ -1,10 +1,10 @@
 .container_contactMe {
-    
-    max-width: 30vw;
-    margin: 3em auto;
-    background-color: lightgrey;
-    padding: 3em;
+    max-width: 35vw;
+    background-color: rgb(61, 61, 61);
+    padding: 2em;
     bottom: 10em;
+    color: white;
+    border-radius: 2em;
 }
 
 input[type=text],
@@ -21,17 +21,38 @@ textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 1em 2em;
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
+    margin: 1em 0;
+    font-weight: 800;
+    font-size: 1em;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+button[type=submit]:hover {
+    background-color: #38813c;
+    color: rgb(207, 207, 207);
+}
+
+button[type=reset] {
+    background-color: rgb(175, 76, 76);
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 1em;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+button[type=reset]:hover {
+    background-color: #813838;
+    color: rgb(207, 207, 207);
 }
 
 .success {

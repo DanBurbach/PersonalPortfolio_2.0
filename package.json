@@ -11,6 +11,7 @@
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "reaptcha": "^1.6.0",
     "toastr": "^2.1.4"
   },
   "scripts": {
