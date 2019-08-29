@@ -101,9 +101,6 @@ handleContactNav = (event) => {
               <div className="main_section">
                 <div id="about">
                   <div className="about">
-                    <div className="about_grid_left">
-                      <div id="about_image" />
-                    </div>
                     <div className="about_grid_right">
                       <About />
                     </div>
