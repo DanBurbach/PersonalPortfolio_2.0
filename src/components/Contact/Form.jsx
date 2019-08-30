@@ -14,6 +14,7 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      verified: false,
       name: "",
       email: "",
       subject: "",
@@ -29,6 +30,12 @@ class Form extends Component {
     this.handleFormChange = this.handleFormChange.bind(this);
     this.validateMail = this.validateMail.bind(this);
   }
+
+  onVerify = recaptchaResponse => {
+    this.setState({
+      verified: true
+    });
+  };
 
   handleFormSubmit = event => {
     event.preventDefault();
@@ -115,13 +122,13 @@ class Form extends Component {
   }
 
   handleResetForm = () => {
-      this.setState({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
     });
-  }
+  };
 
   render() {
     return (
@@ -129,7 +136,7 @@ class Form extends Component {
         <p>Contact Me</p>
         <div>
           <form
-            ref={(element) => this.myContactFormRef = element}
+            ref={element => (this.myContactFormRef = element)}
             id={this.props.id}
             className={this.props.className}
             name={this.props.name}
@@ -177,19 +184,22 @@ class Form extends Component {
               type="submit"
               required="required"
               onClick={this.handleFormSubmit}
+              disabled={!this.state.verified}
             >
-              {" "}
-              Submit{" "}
+              Submit
             </button>
-            <button type="reset" value="Reset" onClick={this.handleResetForm}>
+            <button
+              type="reset"
+              value="Reset"
+              onClick={this.handleResetForm}
+            >
               Reset
             </button>
             <Reaptcha
-              ref={e => (this.captcha = e)}
+              theme="dark"
               sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-              onVerify={recaptchaResponse => {}}
+              onVerify={this.onVerify}
             />
-            <button onClick={() => this.captcha.reset()}>Reset</button>
           </form>
         </div>
       </div>

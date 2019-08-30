@@ -38,6 +38,18 @@ button[type=submit]:hover {
     color: rgb(207, 207, 207);
 }
 
+button:disabled,
+button[disabled] {
+    background-color: #585858;
+    color: rgb(207, 207, 207);
+}
+
+button:disabled:hover,
+button[disabled=hover] {
+    background-color: #8d8d8d;
+    color: rgb(207, 207, 207);
+}
+
 button[type=reset] {
     background-color: rgb(175, 76, 76);
     color: white;
