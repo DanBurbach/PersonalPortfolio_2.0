@@ -133,7 +133,10 @@ class Form extends Component {
   render() {
     return (
       <div className="container_contactMe">
-        <p>Contact Me</p>
+        <br />
+        <div className="contact_title">Contact Me</div>
+        <br />
+
         <div>
           <form
             ref={element => (this.myContactFormRef = element)}
