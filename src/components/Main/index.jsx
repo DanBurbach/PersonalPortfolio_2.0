@@ -8,7 +8,7 @@ import Contact from '../Contact';
 import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
 import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
-import Timeline from './../Skills/Timeline';
+import Timeline from '../About/Timeline';
 
 
 import "./../../assets/Main.css";
@@ -100,11 +100,11 @@ handleContactNav = (event) => {
 
               <div className="main_section">
                 <div id="about">
-                  <div className="about">
-                    <div className="about_grid_right">
+                  <div className="about group">
+                    <div className="col about_grid_left">
                       <About />
                     </div>
-                    <div id="timeline">
+                    <div className="col about_grid_right" id="timeline">
                       <Timeline />
                     </div>
                   </div>
