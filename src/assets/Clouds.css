@@ -252,19 +252,19 @@
 }
 
 @-webkit-keyframes moveclouds {
-	0% {margin-left: 100vw;}
-	100% {margin-left: -500%;}
+	0% {margin-left: 500vw;}
+	100% {margin-left: -1000%;}
 }
 @-moz-keyframes moveclouds {
-	0% {margin-left: 100vw;}
-	100% {margin-left: -500%;}
+	0% {margin-left: 500vw;}
+	100% {margin-left: -1000%;}
 }
 @-o-keyframes moveclouds {
-	0% {margin-left: 100vw;}
-	100% {margin-left: -500%;}
+	0% {margin-left: 500vw;}
+	100% {margin-left: -1000%;}
 }
 
 @keyframes moveclouds {
-	0% {margin-left: 100vw;}
-	100% {margin-left: -500%;}
+	0% {margin-left: 500vw;}
+	100% {margin-left: -1000%;}
 }
