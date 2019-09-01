@@ -1,3 +1,24 @@
-.about_me {
-    font-size: calc(0.65vw + 0.25em);
+.about_me  {
+    color: #ecf0f1;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 30;
+    position: absolute;
+    width: 40vw;
+    letter-spacing: 0.05em;
+    font-size: calc(0.7vw + 0.25em);
+    height: 1.5vh;
+    line-height: 2.2vh;
+    text-shadow: 2px -1px
+        4px -4px 0 #3a3a3a,
+        5px -5px 0 #1d1d1d;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: skewY(0.25);
+    -webkit-transform: skewY(0.25);
+    -ms-transform: skewY(0.25);
+    -o-transform: skewY(0.25);
+    transform: skewY(0.25);
 }
