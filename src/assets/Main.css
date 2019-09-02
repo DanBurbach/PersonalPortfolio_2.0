@@ -1,36 +1,45 @@
 .main_container {
     z-index: 2;
+    background: linear-gradient(#000, #080b1b, #161e49, #1400cc, #87ceeb, skyblue, rgb(13, 80, 13), rgb(63, 35, 17), #000000)
 }
 
 .intro {
     height: 100vh;
     width: 100vw;
+    z-index: 4;
 }
 
 .about {
     clear: both;
     color: #ffffff;
-    padding-left: 5em;
+    padding-left: 6em;
     padding-right: 5em;
     height: 100vh;
-    background: linear-gradient(#161e49, #1400cc, #87ceeb);
-}
-
-.projects {
-    z-index: 5;
-    padding-left: 5em;
-    padding-right: 5em;
-    height: 200vh;
-    background: linear-gradient(skyblue, rgb(13, 80, 13));
+    /* background: linear-gradient(#161e49, #1400cc, #87ceeb); */
 }
 
 .skills {
     content: center;
     padding-left: 5em;
     height: 100vh;
-    background: linear-gradient(#87ceeb, skyblue);
-    
+    /* background: linear-gradient(#87ceeb, skyblue);   */
 }
+
+.projects {
+    z-index: 50;
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 150vh;
+    /* background: linear-gradient(skyblue, rgb(13, 80, 13)); */
+}
+
+.contact {
+    bottom: 1em;
+    padding-left: 5em;
+    height: 98vh;
+    /* background: linear-gradient(rgb(13, 80, 13), rgb(63, 35, 17), #000000); */
+}
+
 
 #skill_list {
     display: inline-block;
@@ -99,7 +108,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-
     .span_2_of_2,
     .span_1_of_2 {
         width: 100%;
@@ -110,21 +118,8 @@
     display: inline-block;
     position: absolute;
     z-index: 4;
-    /* top: 105vh; */
 }
 
-.contact {
-    padding-left: 5em;
-    height: 100vh;
-    background: linear-gradient(rgb(13, 80, 13), rgb(63, 35, 17), #000000);
-}
-
-#content-spacing {
-    height: 20vh;
-    width: 100vw;
-    left: 0;
-    background: linear-gradient(#060329, #0f0191, #080050,transparent);
-}
 
 .navMenu {
     position: fixed;
