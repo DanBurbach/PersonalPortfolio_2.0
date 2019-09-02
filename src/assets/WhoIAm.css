@@ -29,7 +29,7 @@
     -ms-transform: skewY(1deg);
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
-    background: transparent;
+    z-index: 4;
 }
 
 .whoiam_container h3:first-child {
@@ -47,5 +47,5 @@
     -webkit-transform: skewX(-18deg);
     -ms-transform: skewX(-18deg);
     -o-transform: skewX(-18deg);
-    background: transparent;
+    z-index: 4;
 }

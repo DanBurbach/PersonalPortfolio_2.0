@@ -9,8 +9,8 @@ function ParticlesDisplay() {
         top: 0,
         width: "100vw",
         height: "200vh",
-        zIndex: "-1",
-        background: "linear-gradient(#000, #080b1b, #161e49)",
+        zIndex: "3",
+        // background: "linear-gradient(#000, #080b1b, #161e49)",
         backgroundRepeat: "repeat",
         backgroundSize: "cover",
         backgroundPosition: "50% 50%"
