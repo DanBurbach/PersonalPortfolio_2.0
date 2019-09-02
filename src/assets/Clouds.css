@@ -45,6 +45,7 @@
   opacity: 0.65;
   top: 3em;
   z-index: 1;
+  animation-delay: -20s;
 }
 
 .c2{
@@ -52,7 +53,8 @@
   opacity: 0.3;
   -webkit-animation: moveclouds 44s linear infinite;
   left: 20em;
-  top: 0.5em
+  top: 0.5em;
+  animation-delay: -20s;
 }
 
 .c3{
@@ -62,6 +64,7 @@
   top: 4em;
   z-index: 1;
   left: 10em;
+  animation-delay: -20s;
 }
 
 .c4{
@@ -70,6 +73,7 @@
   left: 30em;
   top: 6em;
   z-index: 1;
+  animation-delay: -20s;
 }
 
 .c5{
@@ -79,6 +83,7 @@
   left: 3em;
   top: 9em;
   z-index: 1;
+  animation-delay: -20s;
 }
 
 .cloud_group_2 {
@@ -92,6 +97,7 @@
   opacity: 0.8;
   top: 11em;
   z-index: 1;
+  animation-delay: -20s;
 }
 
 .c7 {
@@ -100,6 +106,7 @@
   -webkit-animation: moveclouds 90s linear infinite;
   left: 30em;
   top: 7em;
+  animation-delay: -20s;
 }
 
 .c8 {
@@ -109,6 +116,7 @@
   top: 9em;
   z-index: 1;
   left: 10em;
+  animation-delay: -20s;
 }
 
 .c9 {
@@ -117,6 +125,8 @@
   left: 30em;
   top: 28em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c10 {
@@ -126,6 +136,8 @@
   left: 3em;
   top: 8em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .cloud_group_3 {
@@ -141,6 +153,8 @@
   left: 33em;
   top: 38.75em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c12 {
@@ -150,6 +164,8 @@
   left: 3em;
   top: 11.5em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c13 {
@@ -159,6 +175,8 @@
   left: 9em;
   top: 42.5em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c14 {
@@ -168,6 +186,8 @@
   left: 22em;
   top: 25.5em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c15 {
@@ -177,6 +197,8 @@
   left: 16em;
   top: 2.65em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .cloud_group_4 {
@@ -192,6 +214,8 @@
   left: 19em;
   top: 32em;
   z-index: 1;
+  animation-delay: -20s;
+
 }
 
 .c17 {
@@ -202,6 +226,7 @@
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
 	opacity: 0.6;
+	animation-delay: -20s;
 
 	-webkit-animation: moveclouds 45s linear infinite;
 	-moz-animation: moveclouds 45s linear infinite;
@@ -216,6 +241,7 @@
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 0.8;
+	animation-delay: -20s;
 
 	-webkit-animation: moveclouds 55.5s linear infinite;
 	-moz-animation: moveclouds 55.5s linear infinite;
@@ -230,6 +256,7 @@
 	-moz-transform: scale(0.75);
 	transform: scale(0.75);
 	opacity: 0.75;
+	animation-delay: -20s;
 
 	-webkit-animation: moveclouds 31s linear infinite;
 	-moz-animation: moveclouds 31s linear infinite;
@@ -244,7 +271,7 @@
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 0.8;
-	/*opacity proportional to the size*/
+  animation-delay: -20s;
 
 	-webkit-animation: moveclouds 60s linear infinite;
 	-moz-animation: moveclouds 60s linear infinite;

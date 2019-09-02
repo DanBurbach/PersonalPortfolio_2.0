@@ -11,7 +11,7 @@
     -webkit-transform: scale(1);
     -webkit-animation: moveclouds 65s linear infinite;
     left: 4em;
-    top: 19.75em;
+    top: 29.75em;
     z-index: 1;
 }
 
@@ -104,8 +104,8 @@
   opacity: 0.5;
   -webkit-transform: scale(0.35);
   -webkit-animation: moveclouds 95s linear infinite;
-  left: 16em;
-  top: 18.75em;
+  left: 6em;
+  top: 29.75em;
   z-index: 0.75;
 }
 
@@ -221,7 +221,7 @@
   -webkit-transform: scale(0.55);
   -webkit-animation: moveclouds 65s linear infinite;
   left: 16em;
-  top: 6em;
+  top: 16em;
   z-index: 0.95;
 }
 
