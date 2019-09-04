@@ -1,0 +1,25 @@
+.contact_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_flex > div {
+    padding: 2em;
+    margin: 1em;
+}
+
+.icon_layout {
+    margin: 3em;
+}
+
+.github_icon_background {
+    display: block;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+    max-width: 4em;
+    height: 4em;
+    width: 4em;
+}
