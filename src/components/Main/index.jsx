@@ -5,7 +5,6 @@ import About from '../About';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Contact from '../Contact';
-import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
 import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
@@ -66,7 +65,7 @@ handleContactNav = (event) => {
   render() {
       return (
         <div>
-          <ParticlesDisplay />
+          
           <div className="main_container">
             <div className="navMenuBackground">
               <div className="navMenu">
@@ -87,7 +86,9 @@ handleContactNav = (event) => {
                 </ul>
               </div>
             </div>
+
             <div className="main_group_wrapper">
+
               <div className="main_section">
                 <div id="intro">
                   <div className="intro">
