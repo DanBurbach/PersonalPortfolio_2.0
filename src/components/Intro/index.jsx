@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
+
 import Welcome from './Welcome';
 import MyName from './MyName';
 import DownArrow from './DownArrow';
@@ -15,11 +17,12 @@ class Intro extends Component {
   render() {
     return (
       <div>
+        <ParticlesDisplay />
         <Welcome />
-        <hr className='firstline'/>
+        <hr className="firstline" />
         <MyName />
-        <WhoIAm/>
-        <DownArrow/>
+        <WhoIAm />
+        <DownArrow />
       </div>
     );
   }
