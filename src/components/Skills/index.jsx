@@ -11,10 +11,10 @@ class Skills extends Component {
   render() {
     return (
       <div className="skillsMain">
-       
           <div>
             <h2>Comfortable with:</h2>
-              <div className="graph bar1">HTML / CSS3</div>
+              <div className="graph bar0">HTML5</div>
+              <div className="graph bar1">CSS3</div>
               <div className="graph bar2">JavaScript</div>
               <div className="graph bar3">React.js</div>
               <div className="graph bar4">Photoshop/Illustrator</div>
@@ -27,6 +27,11 @@ class Skills extends Component {
             <h2>Experience with:</h2>
               <div>Redux</div>
               <div>Google Firebase</div>
+              <div>Heroku</div>
+              <div>Git</div>
+              <div>Ruby/Rails</div>
+              <div>Atom</div>
+              <div>Visual Studio Code</div>
           </div>
       </div>
     );
