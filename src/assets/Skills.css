@@ -1,7 +1,6 @@
 .skillsMain {
     padding: 2em;
-    width: calc(100% - 5em);
-    width: 100%;
+    width: calc(100vw - 5em);
     max-width: 50em;
     margin: 0 auto;
 }
@@ -43,20 +42,24 @@
     z-index: -1;
 }
 
+.bar0::after {
+    max-width: 58%;
+}
+
 .bar1::after{
-    max-width: 60%;
+    max-width: 67%;
 }
 
 .bar2::after {
-    max-width: 65%;
+    max-width: 50%;
 }
 
 .bar3::after {
-    max-width: 70%;
+    max-width: 62%;
 }
 
 .bar4::after {
-    max-width: 75%;
+    max-width: 55%;
 }
 
 .bar5::after {

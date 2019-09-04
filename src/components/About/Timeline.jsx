@@ -25,8 +25,6 @@ class Timeline extends Component {
       document.documentElement.clientHeight;
     const scrolled = `${winScroll / height * 100}%`;
 
-    console.log(this.scrolled);
-
     this.setState({
       scrolled: scrolled
     })
