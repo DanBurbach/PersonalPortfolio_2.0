@@ -1,0 +1,14 @@
+.nav_footer {
+    display: -webkit-flex;
+    background-color: rgb(63, 63, 63);
+    border-radius: 1.5em;
+    box-shadow: 5px 5px 5px 3px black;
+    height: 60vh;
+
+}
+
+.nav_layout {
+    margin: 1em;
+    align-items: baseline;
+    position: relative;
+}

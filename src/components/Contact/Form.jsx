@@ -7,7 +7,7 @@ import * as emailjs from 'emailjs-com';
 
 import TextArea from './TextArea';
 import Input from './Input';
-import "./../../assets/Form.css";
+import "./../../assets/Footer_Form.css";
 
 
 class Form extends Component {

@@ -1,0 +1,109 @@
+.container_contactMe {
+    bottom: 2em;
+    width: calc(25vw + 0.15em);
+    background-color: rgb(63, 63, 63);
+    font-size: calc(0.8vw + 0.25em);
+    color: white;
+    border-radius: 1.5em;
+    box-shadow: 5px 5px 5px 3px black;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    padding: 2vw;
+}
+
+.contact_title {
+    height: 8vh;
+    width: 26vw;
+    top: 455vh;
+    color: #ecf0f1;
+    font-size: calc(2.25vw + 0.25em);
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 800;
+    position: absolute;
+    text-transform: uppercase;
+    line-height: 8vh;
+    text-align: center;
+    text-shadow:
+        2px -2px 3px #2b2b2b,
+        3px -3px 3px #242424,
+        4px -4px 3px #131313;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: skewY(1deg);
+    -webkit-transform: skewY(1deg);
+    -ms-transform: skewY(1deg);
+    -o-transform: skewY(1deg);
+    transform: skewY(1deg);
+    z-index: 20;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 1.25em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    resize: vertical;
+}
+
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 1em 0;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+button[type=submit]:hover {
+    background-color: #38813c;
+    color: rgb(207, 207, 207);
+}
+
+button:disabled,
+button[disabled] {
+    background-color: #585858;
+    color: rgb(207, 207, 207);
+}
+
+button:disabled:hover,
+button[disabled=hover] {
+    background-color: #8d8d8d;
+    color: rgb(207, 207, 207);
+}
+
+button[type=reset] {
+    background-color: rgb(175, 76, 76);
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 1em;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+button[type=reset]:hover {
+    background-color: #813838;
+    color: rgb(207, 207, 207);
+}
+
+.success {
+    margin: 2em 0;
+    border: 1px solid green;
+    padding: 0.5em;
+    font-weight: 400;
+}
