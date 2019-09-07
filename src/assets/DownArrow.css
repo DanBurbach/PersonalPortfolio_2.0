@@ -1,6 +1,7 @@
 .arrow{
   animation: arr 2s infinite;
   position:relative;
+  bottom: 1em;
 }
 
 .arrow:before {

@@ -3,12 +3,41 @@
     width: calc(100vw - 5em);
     max-width: 50em;
     margin: 0 auto;
+    font-size: calc(0.8vw + 0.15em);
+}
+
+.skillsMain h2 {
+    padding: 0.5em;
+    color: #ecf0f1;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 30vw;
+    font-size: calc(2.25vw + 0.15em);
+    height: 2vh;
+    line-height: 2.3vh;
+    text-align: center;
+    text-shadow:
+        2px -2px 3px #2b2b2b,
+        3px -3px 3px #242424,
+        4px -4px 3px #131313;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: skewY(1deg);
+    -webkit-transform: skewY(1deg);
+    -ms-transform: skewY(1deg);
+    -o-transform: skewY(1deg);
+    transform: skewY(1deg);
+    z-index: 20;
 }
 
 .graph {
     height: 2em;
-    width: 60em;
-    margin: 0 auto 0.6em auto;
+    width: calc(60vw + 0.15em);
+    margin: 0.6em;
     line-height: 2em;
     font-size: 1em;
     color: white;
