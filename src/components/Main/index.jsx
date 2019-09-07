@@ -8,7 +8,10 @@ import Contact from '../Contact';
 import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
+import Icons from "./../Contact/Icons.jsx";
+// import Navigation from "./../Contact/Navigation.jsx";
 
+import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
 import "./../../assets/Main.css";
 import "./../../assets/Timeline.css"
@@ -65,7 +68,6 @@ handleContactNav = (event) => {
   render() {
       return (
         <div>
-          
           <div className="main_container">
             <div className="navMenuBackground">
               <div className="navMenu">
@@ -88,7 +90,6 @@ handleContactNav = (event) => {
             </div>
 
             <div className="main_group_wrapper">
-
               <div className="main_section">
                 <div id="intro">
                   <div className="intro">
@@ -121,7 +122,7 @@ handleContactNav = (event) => {
                       <Skills />
                     </div>
                     <div id="balloons">
-                      <Balloon/>
+                      <Balloon />
                     </div>
                     <div id="clouds">
                       <Clouds />
@@ -141,14 +142,86 @@ handleContactNav = (event) => {
               </div>
 
               {/* <div id="content-spacing" /> */}
-
-              <div className="main_section">
+              {/* <div className="main_section">
                 <div id="contact">
                   <div className="contact">
                     <Contact />
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+              <footer>
+                {/* <div className="main_section"> */}
+                <div id="contact">
+                  {/* <div className="contact"></div> */}
+                  <div className="centered clearfix">
+                    <div className="footer-logo">
+                      <img className="logo" placeholder="my Icon" />
+                      <div className="social">
+                        <Icons />
+                      </div>
+
+                      <div className="footer-navigation">
+                        <div className="footer-links-holder">
+                          <ul>
+                            <ol>
+                              {" "}
+                              <a onClick={this.handleMainNav}>Main</a>
+                            </ol>
+                            <ol>
+                              {" "}
+                              <a onClick={this.handleAboutNav}>About</a>
+                            </ol>
+                            <ol>
+                              {" "}
+                              <a onClick={this.handleSkillsNav}>Skill</a>s
+                            </ol>
+                            <ol>
+                              {" "}
+                              <a onClick={this.handleProjectsNav}>Projects</a>
+                            </ol>
+                            <ol>
+                              {" "}
+                              <a onClick={this.handleContactNav}>Contact</a>
+                            </ol>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="footer-links-holder">
+                      <ul className="footer-links">
+                        <Contact />
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="bottom-bar">
+                    All Rights Reserved © 2019 |{" "}
+                    <a href="#Terms_and_Conditions" className="btn_terms">
+                      Terms and Conditions
+                    </a>
+                  </div>
+                  <div class="modal" id="Terms_and_Conditions" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-header">
+                        <a href="/"
+                          class="btn_terms-close"
+                          aria-hidden="true">
+                          x
+                        </a>
+                      </div>
+                      <div class="modal-body">
+                        <TermsAndConditions />
+                      </div>
+                      <div class="modal-footer">
+                        <a href="/" class="btn_terms_bottom">
+                          Close
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
             </div>
           </div>
         </div>

@@ -229,3 +229,121 @@
         right: 35px;
     }
 }
+
+/* Modal ------------------------------------------ */
+.btn_terms {
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: color 0.1s ease;
+}
+
+.btn_terms:hover {
+    color: #357ebd;
+}
+
+.btn_terms_bottom {
+    background-color: #9c0000;
+    color: white;
+    padding: 0.75em 1.25em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 1em 0;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.btn_terms_bottom:hover {
+    background-color: #770000;
+    cursor: pointer;
+    color: lightgrey;
+}
+
+.btn_terms_bottom:active {
+    background-color: #a82424;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.btn_terms-close {
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 1em;
+    top: 0;
+}
+
+.btn_terms-close:hover {
+    color: #919191;
+}
+
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal:target:before {
+    display: block;
+}
+
+.modal:target .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 10%;
+}
+
+.modal-dialog {
+    background: #fefefe;
+    border: #333 solid 1px;
+    border-radius: 0.5em;
+    position: fixed;
+    left: 33vw;
+    z-index: 50;
+    width: 33vw;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.modal-body {
+    color: black;
+    padding: 1.5em;
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    overflow: auto;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 1.25em 1em;
+}
+
+.modal-header {
+    border-bottom: #eee solid 2px;
+}
+
+.modal-footer {
+    padding: 1.25em;
+    border-top: #eee solid 2px;
+    text-align: right;
+}
