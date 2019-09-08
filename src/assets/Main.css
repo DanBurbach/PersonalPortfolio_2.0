@@ -256,6 +256,7 @@
     font-weight: 800;
     font-size: 1em;
     text-decoration: none;
+    width: 3.5vw;
 }
 
 .btn_terms_bottom:hover {
@@ -347,77 +348,68 @@
     text-align: right;
 }
 
-/* contact modal ----------------------------------------- */
-
-.modal_contact:before {
-    content: "";
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
+/* contact modal css ------------- */
+.modalDialog_contact {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
 }
 
-.modal_contact:target:before {
-    display: block;
+.modalDialog_contact:target {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.modal_contact:target .modal_contact-dialog {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    top: 2%;
-    height: 95%;
-    box-shadow: 10px 10px 5px #00000083;
-}
-
-.modal_contact-dialog {
-    background: rgb(63, 63, 63);
-    border: #333 solid 1px;
-    border-radius: 0.5em;
-    position: fixed;
-    left: 33vw;
-    z-index: 50;
-    width: 33vw;
-    -webkit-transform: translate(0, -500%);
-    -ms-transform: translate(0, -500%);
-    transform: translate(0, -500%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-}
-
-.modal_contact-body {
-    color: black;
-    padding: 1.5em;
-    width: 90%;
-    height: 80vh;
+.modalDialog_contact>div {
+    max-width: 800px;
+    width: calc(27.8vw + 0.75em);
     position: relative;
-    overflow: auto;
+    margin: 2% auto;
+    padding: 0px;
+    border-radius: 0.75em;
+    background: rgb(63, 63, 63);
 }
 
-.modal_contact-header,
-.modal_contact-footer {
-    padding: 1.25em 1em;
+.close_contact {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f26d7d;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 34px;
+    height: 34px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding-top: 5px;
+    z-index: 101;
 }
 
-.modal_contact-header {
-    border-bottom: rgba(39, 39, 39, 0.616) solid 2px;
+.close_contact:hover {
+    background: #fa3f6f;
 }
 
-.modal_contact-footer {
-    padding: auto;
-    border-top: rgba(39, 39, 39, 0.616) solid 2px;
-    text-align: right;
-}
 
 /* main footer css ------------------------------------ */
 .footer {
-    height: 30vh;
+    height: auto;
     width: 100%;
     position: relative;
     background-color: #000000;
@@ -526,6 +518,7 @@
     .footer .col {
         width: 33%;
     }
+    
 
     .footer .col h1 {
         font-size: 1em;

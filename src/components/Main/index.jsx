@@ -141,7 +141,6 @@ handleContactNav = (event) => {
                 </div>
               </div>
 
-
               <div className="main_section">
                 <div id="contact">
                   <div className="contact">
@@ -176,29 +175,23 @@ handleContactNav = (event) => {
                         <div className="col">
                           <h1>Resources</h1>
                           <ul>
-                            <li><a href="#Contact_Me">
-                            Contact Me
-                            </a>
+                            <li>
+                              <a href="#openModal_contact">Contact Me</a>
                             </li>
-                              <div className="modal_contact" id="Contact_Me" aria-hidden="true">
-                                <div className="modal_contact-dialog">
-                                  <div className="modal_contact-header">
-                                    <h1>Contact Me</h1>
-                                    <a href="/" className="btn_terms-close" aria-hidden="true">
-                                      x
-                                    </a>
-                                  </div>
-                                <div className="modal_contact-body">
-                                  <Contact />
-                                </div>
-                                <div className="modal_contact-footer">
-                                  <a href="/" className="btn_terms_bottom">
-                                    Close
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
                           </ul>
+                        </div>
+
+                        <div id="openModal_contact" className="modalDialog_contact">
+                          <div>
+                            <a href="#close_contact"
+                              title="Close_Contact"
+                              className="close_contact">
+                              X
+                            </a>
+                            <div>
+                             <Contact />
+                            </div>
+                          </div>
                         </div>
 
                         <div className="col social">
@@ -250,10 +243,18 @@ handleContactNav = (event) => {
                           Terms and Conditions
                         </a>
                       </div>
-                      <div className="modal" id="Terms_and_Conditions" aria-hidden="true">
+                      <div
+                        className="modal"
+                        id="Terms_and_Conditions"
+                        aria-hidden="true"
+                      >
                         <div className="modal-dialog">
                           <div className="modal-header">
-                            <a href="/" className="btn_terms-close" aria-hidden="true">
+                            <a
+                              href="/"
+                              className="btn_terms-close"
+                              aria-hidden="true"
+                            >
                               x
                             </a>
                           </div>
@@ -267,7 +268,6 @@ handleContactNav = (event) => {
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
