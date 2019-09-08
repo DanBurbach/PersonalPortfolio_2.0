@@ -133,9 +133,9 @@ class Form extends Component {
   render() {
     return (
       <div className="container_contactMe">
-        <br />
+        {/* <br />
         <div className="contact_title">Contact Me</div>
-        <br />
+        <br /> */}
 
         <div>
           <form
