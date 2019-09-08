@@ -8,7 +8,7 @@ import Contact from '../Contact';
 import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
-import Icons from "./../Contact/Icons.jsx";
+// import Icons from "./../Contact/Icons.jsx";
 // import Navigation from "./../Contact/Navigation.jsx";
 
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
@@ -141,87 +141,137 @@ handleContactNav = (event) => {
                 </div>
               </div>
 
-              {/* <div id="content-spacing" /> */}
-              {/* <div className="main_section">
+
+              <div className="main_section">
                 <div id="contact">
                   <div className="contact">
-                    <Contact />
-                  </div>
-                </div>
-              </div> */}
-
-              <footer>
-                {/* <div className="main_section"> */}
-                <div id="contact">
-                  {/* <div className="contact"></div> */}
-                  <div className="centered clearfix">
-                    <div className="footer-logo">
-                      <img className="logo" placeholder="my Icon" />
-                      <div className="social">
-                        <Icons />
-                      </div>
-
-                      <div className="footer-navigation">
-                        <div className="footer-links-holder">
+                    <div className="footer">
+                      <div className="contain">
+                        <div className="col">
+                          <h1>Navigation</h1>
                           <ul>
-                            <ol>
+                            <li>
                               {" "}
                               <a onClick={this.handleMainNav}>Main</a>
-                            </ol>
-                            <ol>
+                            </li>
+                            <li>
                               {" "}
                               <a onClick={this.handleAboutNav}>About</a>
-                            </ol>
-                            <ol>
+                            </li>
+                            <li>
                               {" "}
                               <a onClick={this.handleSkillsNav}>Skill</a>s
-                            </ol>
-                            <ol>
+                            </li>
+                            <li>
                               {" "}
                               <a onClick={this.handleProjectsNav}>Projects</a>
-                            </ol>
-                            <ol>
+                            </li>
+                            <li>
                               {" "}
                               <a onClick={this.handleContactNav}>Contact</a>
-                            </ol>
+                            </li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
 
-                    <div className="footer-links-holder">
-                      <ul className="footer-links">
-                        <Contact />
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="bottom-bar">
-                    All Rights Reserved © 2019 |{" "}
-                    <a href="#Terms_and_Conditions" className="btn_terms">
-                      Terms and Conditions
-                    </a>
-                  </div>
-                  <div class="modal" id="Terms_and_Conditions" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-header">
-                        <a href="/"
-                          class="btn_terms-close"
-                          aria-hidden="true">
-                          x
+                        <div className="col">
+                          <h1>Resources</h1>
+                          <ul>
+                            <li><a href="#Contact_Me">
+                            Contact Me
+                            </a>
+                            </li>
+                              <div className="modal_contact" id="Contact_Me" aria-hidden="true">
+                                <div className="modal_contact-dialog">
+                                  <div className="modal_contact-header">
+                                    <h1>Contact Me</h1>
+                                    <a href="/" className="btn_terms-close" aria-hidden="true">
+                                      x
+                                    </a>
+                                  </div>
+                                <div className="modal_contact-body">
+                                  <Contact />
+                                </div>
+                                <div className="modal_contact-footer">
+                                  <a href="/" className="btn_terms_bottom">
+                                    Close
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+
+                        <div className="col social">
+                          <h1>Social</h1>
+                          <ul>
+                            <li>
+                              <a href="https://www.linkedin.com/in/danielburbach/">
+                                <img
+                                  src={require("./../../assets/icons/linkedin.jpg")}
+                                  alt="LinkedIn"
+                                  width="80px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://github.com/DanBurbach">
+                                <img
+                                  src={require("./../../assets/icons/githubIcon.png")}
+                                  alt="GitHub"
+                                  width="90px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.pinterest.com/dannodemo/">
+                                <img
+                                  src={require("./../../assets/icons/pinterestIcon.svg")}
+                                  alt="Pintrest"
+                                  width="70px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://twitter.com/DannoDemo">
+                                <img
+                                  src={require("./../../assets/icons/twitterIcon.svg")}
+                                  alt="Twitter"
+                                  width="70px"
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="bottom-bar">
+                        All Rights Reserved © 2019{" "}
+                        <a href="#Terms_and_Conditions" className="btn_terms">
+                          Terms and Conditions
                         </a>
                       </div>
-                      <div class="modal-body">
-                        <TermsAndConditions />
+                      <div className="modal" id="Terms_and_Conditions" aria-hidden="true">
+                        <div className="modal-dialog">
+                          <div className="modal-header">
+                            <a href="/" className="btn_terms-close" aria-hidden="true">
+                              x
+                            </a>
+                          </div>
+                          <div className="modal-body">
+                            <TermsAndConditions />
+                          </div>
+                          <div className="modal-footer">
+                            <a href="/" className="btn_terms_bottom">
+                              Close
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div class="modal-footer">
-                        <a href="/" class="btn_terms_bottom">
-                          Close
-                        </a>
-                      </div>
+
                     </div>
                   </div>
                 </div>
-              </footer>
+              </div>
             </div>
           </div>
         </div>

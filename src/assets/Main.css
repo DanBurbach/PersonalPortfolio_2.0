@@ -15,6 +15,7 @@
     padding-left: 6em;
     padding-right: 5em;
     height: 100vh;
+    z-index: 4;
     /* background: linear-gradient(#161e49, #1400cc, #87ceeb); */
 }
 
@@ -22,6 +23,7 @@
     content: center;
     padding-left: 5em;
     height: 100vh;
+    z-index: 4;
     /* background: linear-gradient(#87ceeb, skyblue);   */
 }
 
@@ -30,13 +32,12 @@
     padding-left: 5em;
     padding-right: 5em;
     height: 150vh;
+    z-index: 4;
     /* background: linear-gradient(skyblue, rgb(13, 80, 13)); */
 }
 
 .contact {
-    bottom: 1em;
-    padding-left: 5em;
-    height: 98vh;
+    z-index: 4;
     /* background: linear-gradient(rgb(13, 80, 13), rgb(63, 35, 17), #000000); */
 }
 
@@ -89,7 +90,6 @@
 
 .group {
     zoom: 1;
-    /* For IE 6/7 */
 }
 
 .about_grid_right {
@@ -171,7 +171,6 @@
     }
 }
 
-
 .overlay {
     height: 100%;
     width: 0;
@@ -198,7 +197,6 @@
     margin-top: 2em;
     transition: 0.5s;
 }
-
 
 .overlay-content ol:hover,
 .overlay-content ol:focus {
@@ -230,7 +228,7 @@
     }
 }
 
-/* Modal ------------------------------------------ */
+/* Main Modal css ------------------------------------------ */
 .btn_terms {
     background: transparent;
     color: #fff;
@@ -248,15 +246,16 @@
 }
 
 .btn_terms_bottom {
+    position: relative;
     background-color: #9c0000;
     color: white;
     padding: 0.75em 1.25em;
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
-    margin: 1em 0;
     font-weight: 800;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .btn_terms_bottom:hover {
@@ -346,4 +345,213 @@
     padding: 1.25em;
     border-top: #eee solid 2px;
     text-align: right;
+}
+
+/* contact modal ----------------------------------------- */
+
+.modal_contact:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal_contact:target:before {
+    display: block;
+}
+
+.modal_contact:target .modal_contact-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 2%;
+    height: 95%;
+    box-shadow: 10px 10px 5px #00000083;
+}
+
+.modal_contact-dialog {
+    background: rgb(63, 63, 63);
+    border: #333 solid 1px;
+    border-radius: 0.5em;
+    position: fixed;
+    left: 33vw;
+    z-index: 50;
+    width: 33vw;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.modal_contact-body {
+    color: black;
+    padding: 1.5em;
+    width: 90%;
+    height: 80vh;
+    position: relative;
+    overflow: auto;
+}
+
+.modal_contact-header,
+.modal_contact-footer {
+    padding: 1.25em 1em;
+}
+
+.modal_contact-header {
+    border-bottom: rgba(39, 39, 39, 0.616) solid 2px;
+}
+
+.modal_contact-footer {
+    padding: auto;
+    border-top: rgba(39, 39, 39, 0.616) solid 2px;
+    text-align: right;
+}
+
+/* main footer css ------------------------------------ */
+.footer {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+}
+
+.footer .col {
+    margin-left: 8em;
+    display: inline-block;
+}
+
+.footer .col h1 {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.363);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    text-align: left;
+}
+
+.footer .col ul {
+    height: auto;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    color: #b6b6b6;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25em 0 0.25em 0;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.footer .col ul li a{
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25em 0 0.25em 0;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.social ul li {
+    top: 4em;
+    display: inline-block;
+    padding-right: 2em !important;
+}
+
+.footer .col ul li:hover {
+    color: #666666;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+
+.footer .col ul li a:hover {
+    color: #666666;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.bottom-bar {
+    position: relative;
+    text-align: center;
+    font-size: .8em;
+    text-transform: uppercase;
+    background: #000;
+    color: white;
+}
+
+@media only screen and (min-width: 1280px) {
+    .contain {
+        width: 100vw;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+    .contain .social {
+        width: 100vw;
+        display: block;
+    }
+
+    .social h1 {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer .col {
+        width: 33%;
+    }
+
+    .footer .col h1 {
+        font-size: 1em;
+    }
+
+    .footer .col ul li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+
+    .footer .col h1 {
+        font-size: 1em;
+    }
+
+    .footer .col ul li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
 }
