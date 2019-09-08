@@ -1,23 +1,21 @@
 .container_contactMe {
-    bottom: 2em;
-    width: calc(25vw + 0.15em);
+    width: calc(25vw + 0.75em);
     background-color: rgb(63, 63, 63);
-    font-size: calc(0.8vw + 0.25em);
-    color: white;
-    border-radius: 1.5em;
-    box-shadow: 5px 5px 5px 3px black;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: calc(0.6vw + 0.25em);
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0.75em;
     text-transform: uppercase;
-    padding: 2vw;
+    padding: 1.5vw;
+    position: relative;
 }
 
-.contact_title {
+/* .contact_title {
     height: 8vh;
     width: 26vw;
-    top: 455vh;
+    top: 1vh;
     color: #ecf0f1;
-    font-size: calc(2.25vw + 0.25em);
+    font-size: calc(2vw + 0.25em);
     font-family: 'Montserrat',
         sans-serif;
     font-weight: 800;
@@ -39,7 +37,7 @@
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
     z-index: 20;
-}
+} */
 
 input[type=text],
 input[type=email],
