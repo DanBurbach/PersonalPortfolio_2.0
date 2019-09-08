@@ -6,46 +6,46 @@ class Timeline extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      scrolled: 0
+      // scrolled: 0
     };
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.scrollIndicator);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.scrollIndicator);
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollIndicator);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.scrollIndicator);
+  // }
 
-  scrollIndicator = () =>{
-    const winScroll = document.documentElement.scrollTop;
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrolled = `${winScroll / height * 100}%`;
+  // scrollIndicator = () =>{
+  //   const winScroll = document.documentElement.scrollTop;
+  //   const height =
+  //     document.documentElement.scrollHeight -
+  //     document.documentElement.clientHeight;
+  //   const scrolled = `${winScroll / height * 100}%`;
 
-    this.setState({
-      scrolled: scrolled
-    })
-  }
+  //   this.setState({
+  //     scrolled: scrolled
+  //   })
+  // }
   
   render() {
-    const progressBar = {
-    height: "5px",
-    background: "linear-gradient(to right, #0e1430, #4FC1E9)",
-    width: this.state.scrolled
-    };
+    // const progressBar = {
+    // height: "5px",
+    // background: "linear-gradient(to right, #0e1430, #4FC1E9)",
+    // width: this.state.scrolled
+    // };
 
     return (
       <div>
-        <div className="progress-container">
+        {/* <div className="progress-container">
           <div
             className="progressBar"
             id="myBar"
             style={progressBar}
           />
-        </div>
+        </div> */}
         <div className="timeline_container">
           <div className="timeline-block timeline-block-right">
             <div className="marker" />
