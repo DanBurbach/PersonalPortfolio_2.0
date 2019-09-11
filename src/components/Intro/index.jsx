@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
 
 import Welcome from './Welcome';
 import MyName from './MyName';
@@ -17,7 +16,6 @@ class Intro extends Component {
   render() {
     return (
       <div>
-        <ParticlesDisplay />
         <Welcome />
         <hr className="firstline" />
         <MyName />

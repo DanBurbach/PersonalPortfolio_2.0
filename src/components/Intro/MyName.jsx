@@ -11,8 +11,8 @@ class MyName extends Component {
     return (
       <div>
         <div className="myname_container">
-          <h2>My name is Daniel Burbach</h2>
-          <h2 id="shadow">My name is Daniel Burbach</h2>
+          <h2>Daniel Burbach</h2>
+          <h2 id="shadow">Daniel Burbach</h2>
         </div>
       </div>
     );
