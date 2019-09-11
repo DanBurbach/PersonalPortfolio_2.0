@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
+
 
 import Intro from '../Intro';
 import About from '../About';
@@ -8,14 +10,12 @@ import Contact from '../Contact';
 import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
-// import Icons from "./../Contact/Icons.jsx";
-// import Navigation from "./../Contact/Navigation.jsx";
+
 
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
 import "./../../assets/Main.css";
 import "./../../assets/Timeline.css"
-
 
 
 class Main extends Component {
@@ -93,12 +93,11 @@ handleContactNav = (event) => {
               <div className="main_section">
                 <div id="intro">
                   <div className="intro">
+                    <ParticlesDisplay />
                     <Intro />
                   </div>
                 </div>
               </div>
-
-              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
                 <div id="about">
@@ -112,8 +111,6 @@ handleContactNav = (event) => {
                   </div>
                 </div>
               </div>
-
-              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
                 <div id="skills">
@@ -130,8 +127,6 @@ handleContactNav = (event) => {
                   </div>
                 </div>
               </div>
-
-              {/* <div id="content-spacing" /> */}
 
               <div className="main_section">
                 <div id="projects">
@@ -151,23 +146,25 @@ handleContactNav = (event) => {
                           <ul>
                             <li>
                               {" "}
-                              <a onClick={this.handleMainNav}>Main</a>
+                              <div onClick={this.handleMainNav}>Main</div>
                             </li>
                             <li>
                               {" "}
-                              <a onClick={this.handleAboutNav}>About</a>
+                              <div onClick={this.handleAboutNav}>About</div>
                             </li>
                             <li>
                               {" "}
-                              <a onClick={this.handleSkillsNav}>Skill</a>s
+                              <div onClick={this.handleSkillsNav}>Skills</div>
                             </li>
                             <li>
                               {" "}
-                              <a onClick={this.handleProjectsNav}>Projects</a>
+                              <div onClick={this.handleProjectsNav}>
+                                Projects
+                              </div>
                             </li>
                             <li>
                               {" "}
-                              <a onClick={this.handleContactNav}>Contact</a>
+                              <div onClick={this.handleContactNav}>Contact</div>
                             </li>
                           </ul>
                         </div>
@@ -181,15 +178,20 @@ handleContactNav = (event) => {
                           </ul>
                         </div>
 
-                        <div id="openModal_contact" className="modalDialog_contact">
+                        <div
+                          id="openModal_contact"
+                          className="modalDialog_contact"
+                        >
                           <div>
-                            <a href="#close_contact"
+                            <a
+                              href="#close_contact"
                               title="Close_Contact"
-                              className="close_contact">
-                              X
+                              className="close_contact"
+                            >
+                              x
                             </a>
                             <div>
-                             <Contact />
+                              <Contact />
                             </div>
                           </div>
                         </div>
@@ -200,16 +202,16 @@ handleContactNav = (event) => {
                             <li>
                               <a href="https://www.linkedin.com/in/danielburbach/">
                                 <img
-                                  src={require("./../../assets/icons/linkedin.jpg")}
+                                  src={require("./../../assets/icons/linkedin_icon.svg")}
                                   alt="LinkedIn"
-                                  width="80px"
+                                  width="90px"
                                 />
                               </a>
                             </li>
                             <li>
                               <a href="https://github.com/DanBurbach">
                                 <img
-                                  src={require("./../../assets/icons/githubIcon.png")}
+                                  src={require("./../../assets/icons/github_icon.svg")}
                                   alt="GitHub"
                                   width="90px"
                                 />
@@ -218,18 +220,18 @@ handleContactNav = (event) => {
                             <li>
                               <a href="https://www.pinterest.com/dannodemo/">
                                 <img
-                                  src={require("./../../assets/icons/pinterestIcon.svg")}
+                                  src={require("./../../assets/icons/pinterest_icon.svg")}
                                   alt="Pintrest"
-                                  width="70px"
+                                  width="90px"
                                 />
                               </a>
                             </li>
                             <li>
                               <a href="https://twitter.com/DannoDemo">
                                 <img
-                                  src={require("./../../assets/icons/twitterIcon.svg")}
+                                  src={require("./../../assets/icons/twitter_icon.svg")}
                                   alt="Twitter"
-                                  width="70px"
+                                  width="90px"
                                 />
                               </a>
                             </li>

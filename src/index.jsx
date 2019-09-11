@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import './assets/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <App />, 
+    <ParallaxProvider>
+        <App /> 
+    </ParallaxProvider>,
 document.getElementById('root')
 );
 
