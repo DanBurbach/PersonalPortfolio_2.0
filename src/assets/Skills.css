@@ -34,6 +34,8 @@
     z-index: 20;
 }
 
+/* skill graph ----------------------------------- */
+
 .graph {
     height: 2em;
     width: calc(60vw + 0.15em);
@@ -110,4 +112,76 @@
   100%{
     width: 100%;
   }
+}
+
+/* experience icons --------------------------------- */
+
+.skill_icons_main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.skill_icons_main ul li{
+    float: left;
+}
+
+.skill_icons_main ul li a {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1280px) {
+    .skill_icons_main {
+        width: 100vw;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+    .skill_icons_main {
+        width: 100vw;
+        display: block;
+    }
+
+    .skill_icons_main h1 {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .skill_icons_main {
+        width: 33%;
+    }
+
+    .skill_icons_main h1 {
+        font-size: 1em;
+    }
+
+    .skill_icons_main ul li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill_icons_main {
+        width: 50%;
+    }
+
+    .skill_icons_main h1 {
+        font-size: 1em;
+    }
+
+    .skill_icons_main ul li {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .skill_icons_main {
+        width: 100%;
+    }
 }
