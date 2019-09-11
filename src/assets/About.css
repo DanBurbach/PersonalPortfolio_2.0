@@ -1,17 +1,16 @@
 .about_me  {
     color: #ecf0f1;
-    font-family: 'Montserrat',
-        sans-serif;
-    font-weight: 30;
-    position: absolute;
+    font-family: 'Permanent Marker',
+    cursive;
+    /* font-weight: 30; */
+    position: relative;
     width: 40vw;
     letter-spacing: 0.05em;
-    font-size: calc(0.75vw + 0.25em);
+    font-size: calc(0.95vw + 0.25em);
     height: 1.5vh;
     line-height: 2.2vh;
-    text-shadow: 2px -1px
-        4px -4px 0 #3a3a3a,
-        5px -5px 0 #1d1d1d;
+    text-shadow: 3px -3px 3px #242424,
+    4px -4px 3px #131313;
     -moz-transform-origin: bottom left;
     -webkit-transform-origin: bottom left;
     -ms-transform-origin: bottom left;
@@ -21,6 +20,7 @@
     -ms-transform: skewY(0.15);
     -o-transform: skewY(0.15);
     transform: skewY(0.15);
+    z-index: 3;
 }
 
 .about_me h3 {
@@ -46,5 +46,5 @@
     -ms-transform: skewY(1deg);
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
-    z-index: 50;
+    z-index: 3;
 }

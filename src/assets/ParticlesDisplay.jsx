@@ -5,7 +5,7 @@ function ParticlesDisplay() {
   return (
     <Particles
       style={{
-        position: "absolute",
+        position: "relative",
         top: 0,
         width: "100vw",
         height: "200vh",
