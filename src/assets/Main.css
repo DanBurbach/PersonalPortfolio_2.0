@@ -381,7 +381,7 @@
 
 .close_contact {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f26d7d;
+    background: #b60015;
     color: #fff;
     line-height: 25px;
     position: absolute;
@@ -403,7 +403,7 @@
 }
 
 .close_contact:hover {
-    background: #fa3f6f;
+    background: #e93260;
 }
 
 
@@ -466,7 +466,15 @@
 .social ul li {
     top: 4em;
     display: inline-block;
-    padding-right: 2em !important;
+    padding-right: 1em !important;
+}
+
+ul#socialbuttons li a img {
+    transition: transform 0.5s ease-in-out;
+}
+
+ul#socialbuttons li:hover a img {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
 }
 
 .footer .col ul li:hover {
