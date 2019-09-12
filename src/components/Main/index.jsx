@@ -11,7 +11,6 @@ import Clouds from "./../Skills/Clouds";
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
 
-
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
 import "./../../assets/Main.css";
@@ -198,7 +197,7 @@ handleContactNav = (event) => {
 
                         <div className="col social">
                           <h1>Social</h1>
-                          <ul>
+                          <ul className="social_buttons" id="socialbuttons">
                             <li>
                               <a href="https://www.linkedin.com/in/danielburbach/">
                                 <img
