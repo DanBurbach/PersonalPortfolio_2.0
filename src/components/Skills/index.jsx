@@ -23,79 +23,135 @@ class Skills extends Component {
         </div>
         <div className="skill_icons_main">
           <h2>Experience with:</h2>
+          <div className="col">
+            <h3>Front-End</h3>
+            <ul>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_ReactJSIcon.png")}
+                    alt="React"
+                    width="80vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_ReduxIcon.png")}
+                    alt="Redux"
+                    width="60vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_HTML5Icon.png")}
+                    alt="HTML5"
+                    width="80vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_JSIcon.png")}
+                    alt="Javascript"
+                    width="60vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_CSS3Icon.png")}
+                    alt="CSS3"
+                    width="55vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_AngularIcon.svg")}
+                    alt="Angular"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <h3>Back-End</h3>
+            <ul>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_RubyIcon.png")}
+                    alt="Ruby"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_RailsIcon.png")}
+                    alt="Rails"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
+                    alt="Google Firebase"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col">
+            <h3>Storage/Hosting</h3>
           <ul>
             <li>
-              React.js |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_ReactJSIcon.png")}
-                  alt="React"
-                  width="80vw"
-                />
-              </a>
-            </li>
-            <li>
-              Redux |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_ReduxIcon.png")}
-                  alt="Redux"
-                  width="60vw"
-                />
-              </a>
-            </li>
-            <li>
-              Google Firebase |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
-                  alt="Google Firebase"
-                  width="70vw"
-                />
-              </a>
-            </li>
-            <li>
-              Heroku |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
-                  alt="Heroku"
-                  width="70vw"
-                />
-              </a>
-            </li>
-            <li>
-              Git |{" "}
               <a href>
                 <img
                   src={require("./../../assets/experience_icons/exp_GitIcon.png")}
                   alt="Git"
-                  width="160vw"
+                  width="120vw"
                 />
               </a>
             </li>
+              <li>
+                <a href>
+                    <img
+                      src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
+                      alt="Heroku"
+                      width="70vw"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          <div className="col">
+            <h3>Code Editing</h3>
+          <ul>
             <li>
-              Ruby |{" "}
               <a href>
                 <img
-                  src={require("./../../assets/experience_icons/exp_RubyIcon.png")}
-                  alt="Ruby"
-                  width="70vw"
+                  src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
+                  alt="Visual Studio Code"
+                  width="60vw"
                 />
               </a>
             </li>
-            <li>
-              Rails |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_RailsIcon.png")}
-                  alt="Rails"
-                  width="70vw"
-                />
-              </a>
-            </li>
-            <li>
-              Atom |{" "}
+            <li>      
               <a href>
                 <img
                   src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
@@ -104,17 +160,9 @@ class Skills extends Component {
                 />
               </a>
             </li>
-            <li>
-              Visual Studio Code |{" "}
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
-                  alt="Visual Studio Code"
-                  width="70vw"
-                />
-              </a>
-            </li>
           </ul>
+        </div>
+
         </div>
       </div>
     );

@@ -1,5 +1,5 @@
 .skillsMain {
-    padding: 2em;
+    padding: 1em;
     width: calc(100vw - 5em);
     max-width: 50em;
     margin: 0 auto;
@@ -7,7 +7,8 @@
 }
 
 .skillsMain h2 {
-    padding: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.75em;
     color: #ecf0f1;
     font-family: 'Montserrat',
         sans-serif;
@@ -16,7 +17,7 @@
     width: 30vw;
     font-size: calc(2.25vw + 0.15em);
     height: 2vh;
-    line-height: 2.3vh;
+    line-height: 2vh;
     text-align: center;
     text-shadow:
         2px -2px 3px #2b2b2b,
@@ -74,7 +75,7 @@
 }
 
 .bar0::after {
-    max-width: 58%;
+    max-width: 56%;
 }
 
 .bar1::after{
@@ -82,7 +83,7 @@
 }
 
 .bar2::after {
-    max-width: 50%;
+    max-width: 58%;
 }
 
 .bar3::after {
@@ -102,7 +103,7 @@
 }
 
 .bar6::after {
-    max-width: 40%;
+    max-width: 43%;
 }
 
 @-webkit-keyframes bar-before {
@@ -116,10 +117,32 @@
 
 /* experience icons --------------------------------- */
 
+.skill_icons_main {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+}
+
+.skill_icons_main .col {
+    display: inline-block;
+}
+
+.skill_icons_main .col h3 {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: rgba(0, 0, 0, 0.363);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    text-align: left;
+}
+
 .skill_icons_main ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     overflow: hidden;
 }
 
@@ -128,10 +151,14 @@
 }
 
 .skill_icons_main ul li a {
-    padding: 1em;
+    padding: 0.25em;
     display: block;
     text-align: center;
     text-decoration: none;
+}
+.skill_icons_main ul li a img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -153,7 +180,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .skill_icons_main {
+    .skill_icons_main .col{
         width: 33%;
     }
 
@@ -161,27 +188,27 @@
         font-size: 1em;
     }
 
-    .skill_icons_main ul li {
+    .skill_icons_main .col ul li {
         font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .skill_icons_main {
+    .skill_icons_main .col {
         width: 50%;
     }
 
-    .skill_icons_main h1 {
+    .skill_icons_main .col h1 {
         font-size: 1em;
     }
 
-    .skill_icons_main ul li {
+    .skill_icons_main .col ul li {
         font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 340px) {
-    .skill_icons_main {
+    .skill_icons_main .col {
         width: 100%;
     }
 }
