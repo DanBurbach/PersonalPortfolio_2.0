@@ -32,7 +32,7 @@ class Parallax_Wallpaper extends Component {
         <div class="parallax__cover"></div>
       </div>
     );
-    }
+  }
 }
 
 
