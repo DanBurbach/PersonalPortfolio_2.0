@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 import Welcome from './Welcome';
 import MyName from './MyName';
-import DownArrow from './DownArrow';
 import WhoIAm from './WhoIAm'
 import './../../assets/Intro.css';
 
@@ -20,7 +19,6 @@ class Intro extends Component {
         <hr className="firstline" />
         <MyName />
         <WhoIAm />
-        <DownArrow />
       </div>
     );
   }
