@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ParticlesDisplay from "./../../assets/ParticlesDisplay.jsx";
+import ParticlesDisplay from './../../assets/ParticlesDisplay.jsx';
 
 
 import Intro from '../Intro';
@@ -7,14 +7,15 @@ import About from '../About';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Contact from '../Contact';
-import Clouds from "./../Skills/Clouds";
+import Clouds from './../Skills/Clouds';
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
+import Parallax_Wallpaper from '../Projects/Parallax_Wallpaper';
 
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
-import "./../../assets/Main.css";
-import "./../../assets/Timeline.css"
+import './../../assets/Main.css';
+import './../../assets/Timeline.css'
 
 
 class Main extends Component {
@@ -27,40 +28,40 @@ class Main extends Component {
   }
 
 openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById('myNav').style.width = '100%';
 }
 
 closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById('myNav').style.width = '0%';
 }
 
 handleMainNav = (event) => {
   event.preventDefault();
-  document.getElementById("intro").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('intro').scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
 handleAboutNav = (event) => {
   event.preventDefault();
-  document.getElementById("about").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
 handleSkillsNav = (event) => {
   event.preventDefault();
-  document.getElementById("skills").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('skills').scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
 handleProjectsNav = (event) => {
   event.preventDefault();
-  document.getElementById("projects").scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
   this.closeNav();
 }
 
 handleContactNav = (event) => {
   event.preventDefault();
-  document.getElementById("contact").scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'center' });
   this.closeNav();
 }
 
@@ -131,6 +132,7 @@ handleContactNav = (event) => {
                 <div id="projects">
                   <div className="projects">
                     <Projects />
+                    <Parallax_Wallpaper />
                   </div>
                 </div>
               </div>
