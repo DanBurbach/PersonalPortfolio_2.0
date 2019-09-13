@@ -1,12 +1,13 @@
 .main_container {
     z-index: 2;
-    background: linear-gradient(#000, #080b1b, #161e49, #1400cc, #87ceeb, skyblue, rgb(13, 80, 13), rgb(63, 35, 17), #000000)
+    background: linear-gradient(#000, #080b1b, #161e49, #1400cc, #87ceeb, skyblue, rgb(13, 80, 13), #000000)
 }
 
 .intro {
     height: 100vh;
     width: 100vw;
     z-index: 50;
+    position: relative;
 }
 
 .about {
@@ -16,6 +17,7 @@
     padding-right: 5em;
     height: 100vh;
     z-index: 50;
+    position: relative;
     /* background: linear-gradient(#161e49, #1400cc, #87ceeb); */
 }
 
@@ -24,7 +26,8 @@
     content: center;
     padding-left: 5em;
     height: 100vh;
-    z-index: 4;
+    z-index: 50;
+    position: relative;
     /* background: linear-gradient(#87ceeb, skyblue);   */
 }
 
@@ -32,13 +35,18 @@
     z-index: 50;
     padding-left: 5em;
     padding-right: 5em;
-    height: 150vh;
+    height: 100vh;
     z-index: 50;
+    position: relative;
     /* background: linear-gradient(skyblue, rgb(13, 80, 13)); */
 }
 
+.parallax {
+    z-index: 1;
+}
+
 .contact {
-    z-index: 4;
+    z-index: 500;
     /* background: linear-gradient(rgb(13, 80, 13), rgb(63, 35, 17), #000000); */
 }
 
@@ -128,7 +136,7 @@
     top: 10%;
     font-size: 2em;
     cursor: pointer;
-    z-index: 15;
+    z-index: 5000;
     
     font-weight: bold;
     text-transform: uppercase;
@@ -146,7 +154,7 @@
 .navMenuBackground {
     position: fixed;
     color: #fff;
-    z-index: 15;
+    z-index: 5000;
     top: 1em;
     left: -1em;
     width: 5em;
@@ -176,7 +184,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 5;
+    z-index: 5000;
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
@@ -314,7 +322,7 @@
     border-radius: 0.5em;
     position: fixed;
     left: 33vw;
-    z-index: 50;
+    z-index: 500;
     width: 33vw;
     -webkit-transform: translate(0, -500%);
     -ms-transform: translate(0, -500%);
@@ -329,7 +337,7 @@
     color: black;
     padding: 1.5em;
     width: 90%;
-    height: 50vh;
+    height: 47vh;
     position: relative;
     overflow: auto;
 }
@@ -410,6 +418,7 @@
 
 /* main footer css ------------------------------------ */
 .footer {
+    z-index: 50;
     height: auto;
     width: 100%;
     position: relative;

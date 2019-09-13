@@ -10,7 +10,7 @@ import Contact from '../Contact';
 import Clouds from './../Skills/Clouds';
 import Balloon from './../Skills/Balloon';
 import Timeline from '../About/Timeline';
-import Parallax_Wallpaper from '../Projects/Parallax_Wallpaper';
+import ParallaxWallpaper from '../Projects/Parallax_Wallpaper';
 
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
@@ -132,9 +132,12 @@ handleContactNav = (event) => {
                 <div id="projects">
                   <div className="projects">
                     <Projects />
-                    <Parallax_Wallpaper />
                   </div>
                 </div>
+              </div>
+
+              <div className="parallax">
+                <ParallaxWallpaper />
               </div>
 
               <div className="main_section">
