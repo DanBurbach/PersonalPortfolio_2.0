@@ -25,9 +25,9 @@ class Skills extends Component {
           <h2>Experience with:</h2>
           <div className="col">
             <h3>Front-End</h3>
-            <ul>
+            <ul id="skillIcons">
               <li>
-                <a href>
+                <a href="https://reactjs.org">
                   <img
                     src={require("./../../assets/experience_icons/exp_ReactJSIcon.png")}
                     alt="React"
@@ -36,7 +36,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://redux.js.org">
                   <img
                     src={require("./../../assets/experience_icons/exp_ReduxIcon.png")}
                     alt="Redux"
@@ -45,7 +45,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
                   <img
                     src={require("./../../assets/experience_icons/exp_HTML5Icon.png")}
                     alt="HTML5"
@@ -54,7 +54,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
                   <img
                     src={require("./../../assets/experience_icons/exp_JSIcon.png")}
                     alt="Javascript"
@@ -63,7 +63,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
                   <img
                     src={require("./../../assets/experience_icons/exp_CSS3Icon.png")}
                     alt="CSS3"
@@ -72,7 +72,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://angular.io">
                   <img
                     src={require("./../../assets/experience_icons/exp_AngularIcon.svg")}
                     alt="Angular"
@@ -82,11 +82,12 @@ class Skills extends Component {
               </li>
             </ul>
           </div>
+
           <div className="col">
             <h3>Back-End</h3>
-            <ul>
+            <ul id="skillIcons">
               <li>
-                <a href>
+                <a href="https://www.ruby-lang.org/en/">
                   <img
                     src={require("./../../assets/experience_icons/exp_RubyIcon.png")}
                     alt="Ruby"
@@ -95,7 +96,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://rubyonrails.org">
                   <img
                     src={require("./../../assets/experience_icons/exp_RailsIcon.png")}
                     alt="Rails"
@@ -104,7 +105,7 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
-                <a href>
+                <a href="https://firebase.google.com">
                   <img
                     src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
                     alt="Google Firebase"
@@ -116,53 +117,61 @@ class Skills extends Component {
           </div>
 
           <div className="col">
-            <h3>Storage/Hosting</h3>
-          <ul>
-            <li>
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_GitIcon.png")}
-                  alt="Git"
-                  width="120vw"
-                />
-              </a>
-            </li>
+            <h3>Storage/Hosting/Core</h3>
+            <ul id="skillIcons">
               <li>
-                <a href>
-                    <img
-                      src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
-                      alt="Heroku"
-                      width="70vw"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
+                <a href="https://github.com">
+                  <img
+                    src={require("./../../assets/experience_icons/exp_GitHubIcon.png")}
+                    alt="GitHub"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://git-scm.com">
+                  <img
+                    src={require("./../../assets/experience_icons/exp_GitIcon.png")}
+                    alt="Git"
+                    width="120vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.heroku.com">
+                  <img
+                    src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
+                    alt="Heroku"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div className="col">
             <h3>Code Editing</h3>
-          <ul>
-            <li>
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
-                  alt="Visual Studio Code"
-                  width="60vw"
-                />
-              </a>
-            </li>
-            <li>      
-              <a href>
-                <img
-                  src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
-                  alt="Atom"
-                  width="70vw"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-
+            <ul id="skillIcons">
+              <li>
+                <a href="https://code.visualstudio.com">
+                  <img
+                    src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
+                    alt="Visual Studio Code"
+                    width="60vw"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://atom.io">
+                  <img
+                    src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
+                    alt="Atom"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );

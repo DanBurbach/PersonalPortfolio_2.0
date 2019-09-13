@@ -161,6 +161,14 @@
     height: auto;
 }
 
+ul#skillIcons li a img{
+    transition: transform 0.5s ease-in-out;
+}
+
+ul#skillIcons li:hover a img {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+}
+
 @media only screen and (min-width: 1280px) {
     .skill_icons_main {
         width: 100vw;
