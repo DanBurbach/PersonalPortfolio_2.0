@@ -25,17 +25,13 @@
     left: 0;
     right: 0;
     width: 100vw;
-    height: 15vh;
+    height: 1vh;
     z-index: 200;
 }
 
-#scene {
-    pointer-events: none;
-    height: inherit;
-}
 
 .parallaxLayer#p1 {
-    top: -20vh !important;
+    top: -10vh !important;
     position: absolute !important;
     background-image:url("https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/parallax_images/layer_1.png?raw=true");
     background-position: center;
@@ -49,7 +45,7 @@
 .parallaxLayer#p2 {
     width: 140vw;
     object-fit: cover;
-    top: 32vh !important;
+    top: 46vh !important;
     position: center !important;
     object-position: 50% 50% !important;
 }
@@ -57,7 +53,7 @@
 .parallaxLayer#p3 {
     width: 140vw;
     object-fit: cover;
-    top: 8vh !important;
+    top: 13vh !important;
     position: relative !important;
     object-position: 50% 50% !important;
 }
@@ -65,7 +61,7 @@
 .parallaxLayer#p4 {
     width: 140vw;
     object-fit: cover;
-    top: 29vh !important;
+    top: 34vh !important;
     position: absolute !important;
     object-position: 50% 50% !important;
 }
@@ -73,7 +69,7 @@
 .parallaxLayer#p5 {
     width: 140vw;
     object-fit: cover;
-    top: 29vh !important;
+    top: 34vh !important;
     position: absolute !important;
     object-position: 50% 50% !important;
     margin-left: -10vw;
@@ -81,7 +77,7 @@
 
 .parallaxLayer#p6 {
     object-fit: cover;
-    top: 24vh !important;
+    top: 40vh !important;
     position: absolute !important;
     object-position: 50% 50% !important;
 }
