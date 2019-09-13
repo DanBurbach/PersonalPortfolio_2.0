@@ -1,4 +1,4 @@
-# Coding Against Humility
+# Personal Portfolio Website v2.0
 ![Personal Landing Page](https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/README_Intro_Screenshot.png?raw=true)
 
 ### __Created by Dan Burbach__
