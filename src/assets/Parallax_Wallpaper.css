@@ -10,7 +10,7 @@
 }
 
 .parallaxLayer {
-    width: 100vw;
+    width: 200vw;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -35,16 +35,16 @@
 }
 
 .parallaxLayer#p1 {
-    top: 25vh !important;
+    top: -20vh !important;
     position: absolute !important;
     background-image:url("https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/parallax_images/layer_1.png?raw=true");
     background-position: center;
-    background-size:100% auto;
-    background-repeat: repeat-x !important;
+    background-repeat: no-repeat;
     opacity: 0.60;
-    /* margin-left: -40vw;
-    margin-right: -40vw; */
+    margin-left: -42vw;
+    margin-right: -40vw;
 }
+
 
 .parallaxLayer#p2 {
     width: 140vw;
