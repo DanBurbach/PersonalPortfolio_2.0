@@ -1,5 +1,5 @@
 # Coding Against Humility
-![Personal Landing Page](https://raw.githubusercontent.com/DanBurbach/Coding-Against-Humility/master/src/assets/images/CAH_MainScreen.png)
+![Personal Landing Page](https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/README_Intro_Screenshot.png?raw=true)
 
 ### __Created by Dan Burbach__
 
@@ -28,7 +28,7 @@ A personal website and portfolio page. Impliments smooth scrolling, parallax, co
 
   * Enjoy!
 
-![Parallax Footer](https://raw.githubusercontent.com/DanBurbach/Coding-Against-Humility/master/src/assets/images/CAH_BlackCard_Flip.gif)
+![Parallax Footer](https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/README_PersonalWeb2.0_Parallax.gif?raw=true)
 
 ### __Technologies Used__
 
