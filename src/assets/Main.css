@@ -22,11 +22,10 @@
 }
 
 .skills {
-    z-index: 50;
     content: center;
     padding-left: 5em;
     height: 100vh;
-    z-index: 50;
+    z-index: 45;
     position: relative;
     /* background: linear-gradient(#87ceeb, skyblue);   */
 }
@@ -35,7 +34,7 @@
     z-index: 50;
     padding-left: 5em;
     padding-right: 5em;
-    height: 100vh;
+    height: 95vh;
     z-index: 50;
     position: relative;
     /* background: linear-gradient(skyblue, rgb(13, 80, 13)); */
