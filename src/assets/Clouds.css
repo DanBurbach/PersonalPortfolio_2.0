@@ -251,19 +251,35 @@
 }
 
 @-webkit-keyframes moveclouds {
-		0% {left: 100vw;}
-	100% {left: -200%;}
+		0% {
+		  background-position: 2765px 100%;
+		}
+	  100% {
+	    background-position: 550px 100%;
+	}
 }
 @-moz-keyframes moveclouds {
-		0% {left: 100vw;}
-	100% {left: -200%;}
+		0% {
+		  background-position: 2765px 100%;
+		}
+		100% {
+		  background-position: 550px 100%;
+		}
 }
 @-o-keyframes moveclouds {
-		0% {left: 100vw;}
-	100% {left: -200%;}
+		0% {
+		  background-position: 2765px 100%;
+		}
+		100% {
+		  background-position: 550px 100%;
+		}
 }
 
 @keyframes moveclouds {
-		0% {left: 100vw;}
-	100% {left: -200%;}
+		0% {
+		  background-position: 2765px 100%;
+		}
+	100% {
+	  background-position: 550px 100%;
+	}
 }
