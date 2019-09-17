@@ -6,47 +6,14 @@ class Timeline extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // scrolled: 0
     };
   }
 
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.scrollIndicator);
-  // }
-
-  // componentWillUnmount() {
-  //   window.removeEventListener("scroll", this.scrollIndicator);
-  // }
-
-  // scrollIndicator = () =>{
-  //   const winScroll = document.documentElement.scrollTop;
-  //   const height =
-  //     document.documentElement.scrollHeight -
-  //     document.documentElement.clientHeight;
-  //   const scrolled = `${winScroll / height * 100}%`;
-
-  //   this.setState({
-  //     scrolled: scrolled
-  //   })
-  // }
-  
   render() {
-    // const progressBar = {
-    // height: "5px",
-    // background: "linear-gradient(to right, #0e1430, #4FC1E9)",
-    // width: this.state.scrolled
-    // };
-
     return (
       <div>
-        {/* <div className="progress-container">
-          <div
-            className="progressBar"
-            id="myBar"
-            style={progressBar}
-          />
-        </div> */}
         <div className="timeline_container">
+          <div className="timeline_dotted" />
           <div className="timeline-block timeline-block-right">
             <div className="marker" />
             <div className="timeline-content">
@@ -62,7 +29,11 @@ class Timeline extends Component {
             <div className="marker" />
             <div className="timeline-content">
               <h3>1991</h3>
-              <span>First time using a Mac. "Oregon Trail"</span>
+              <span>
+                First time using a Mac
+                <p />
+                "Oregon Trail"
+              </span>
             </div>
           </div>
 
@@ -87,8 +58,9 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2000 - 2001</h3>
               <span>
-                Clackamas Community College. Studied history, philosophy,
-                and journalism.
+                Clackamas Community College.
+                <p />
+                Studied history, philosophy, and journalism.
               </span>
             </div>
           </div>
@@ -97,9 +69,16 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2001 - 2005</h3>
               <span>
-                University of Oregon. Focus on Political Science and Fine
-                Arts - including Typeography and Graphic Design. Extensive
-                use of Adobe Photoshop and Illustrator
+                University of Oregon
+                <p />
+                Bachelors of Science
+                <p />
+                Political Science and Fine Arts
+                <p />
+                Including Typeography and Graphic Design. Extensive use of Adobe
+                Photoshop and Illustrator
+                <p />
+                Eugene, OR
               </span>
             </div>
           </div>
@@ -109,8 +88,11 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2006</h3>
               <span>
-                First job out of college as website developer/designer for
-                flower delivery company - Reed & Cross - in Eugene, OR
+                Reed & Cross
+                <p />
+                Website Developer/Designer & Flower Delivery
+                <p />
+                Eugene, OR
               </span>
             </div>
           </div>
@@ -119,8 +101,9 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2007 - 2008</h3>
               <span>
-                Americorps with Habitat for Humanity in New Orleans, LA and
-                Biloxi, MS. After Hurricane Katrina.
+                Americorps with Habitat for Humanity
+                <p />
+                New Orleans, LA and Biloxi, MS. after Hurricane Katrina
               </span>
             </div>
           </div>
@@ -130,8 +113,11 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2009 - 2013</h3>
               <span>
-                American Tinnitus Association. Fulfillment Coordinator and
-                Social Media Marketing Manager
+                American Tinnitus Association
+                <p />
+                Fulfillment Coordinator and Social Media Marketing Manager
+                <p />
+                Portland, OR
               </span>
             </div>
           </div>
@@ -140,8 +126,11 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>2013 - 2018</h3>
               <span>
-                ACME Scenic and Display. Installer I and On-Site Project
-                Manager
+                ACME Scenic and Display
+                <p />
+                Installer I and On-Site Project Manager
+                <p />
+                Portland, OR
               </span>
             </div>
           </div>
@@ -149,35 +138,60 @@ class Timeline extends Component {
           <div className="timeline-block timeline-block-right">
             <div className="marker" />
             <div className="timeline-content">
-              <span>Some work experience</span>
+              <h3>2018-2019</h3>
+              <span>
+                Epicodus Code School
+                <p />
+                Focus on React/Javascript/Ruby
+                <p />
+                Portland, OR
+              </span>
             </div>
           </div>
+
           <div className="timeline-block timeline-block-left">
             <div className="marker" />
             <div className="timeline-content">
-              <span>Some work experience</span>
+              <h3>2019</h3>
+              <span>
+                Pancake Creative
+                <p />
+                Intern
+                <p />
+                Working on a React.js project from an Angular concept. Heavy
+                CSS, Firebase Authentication, and Profile Creation.
+                <p />
+                Portland, OR
+              </span>{" "}
             </div>
           </div>
 
           <div className="timeline-block timeline-block-right">
             <div className="marker" />
             <div className="timeline-content">
-              <span>Some work experience</span>
-            </div>
-          </div>
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
-              <span>Some work experience</span>
+              <h3>2019 +</h3>
+              <span>
+                Further knowledge of Front-End Development and creation of UI/UX
+                friendly sites.
+                <p />
+                Explore languages Vue, React Native, and others.
+              </span>{" "}
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
+          {/* <div className="timeline-block timeline-block-left">
             <div className="marker" />
             <div className="timeline-content">
               <span>Some work experience</span>
             </div>
-          </div>
+          </div> */}
+
+          {/* <div className="timeline-block timeline-block-right">
+            <div className="marker" />
+            <div className="timeline-content">
+              <span>Some work experience</span>
+            </div>
+          </div> */}
         </div>
       </div>
     );

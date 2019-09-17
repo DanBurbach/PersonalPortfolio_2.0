@@ -1,14 +1,41 @@
-.about_me  {
+/* about main wrapper --------------------------------- */
+.about_main {
+    box-sizing: border-box;
+    /* z-index: 50; */
+    /* padding-top: 2em;
+    width: 100%; */
+}
+.about_item {
+    /* display: inline-block; */
+    float: left;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    width: 40%;
+}
+
+.about_wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 650px) {
+    .about_item {
+        width: 80%;
+    }
+}
+
+/* about me section ------------------------------ */
+
+.about_me h4 {
     color: #ecf0f1;
     font-family: 'Permanent Marker',
     cursive;
-    /* font-weight: -300; */
     position: relative;
-    width: 40vw;
-    letter-spacing: 0.05em;
-    font-size: calc(0.95vw + 0.25em);
-    height: 1.5vh;
-    line-height: 2.2vh;
+    width: 50vw;
+    letter-spacing: 0.1em;
+    font-size: calc(1vw + 0.25em);
+    line-height: 1vh;
     text-shadow: 3px -3px 3px #242424,
     4px -4px 3px #131313;
     -moz-transform-origin: bottom left;
@@ -20,7 +47,7 @@
     -ms-transform: skewY(0.15);
     -o-transform: skewY(0.15);
     transform: skewY(0.15);
-    z-index: 3;
+    z-index: 50;
 }
 
 .about_me h3 {
@@ -29,10 +56,9 @@
     sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    width: 40vw;
-    font-size: calc(1.5vw + 0.25em);
-    height: 2vh;
-    line-height: 0.5vh;
+    width: 50vw;
+    font-size: calc(2vw + 0.25em);
+    line-height: 2vh;
     text-align: left;
     text-shadow: 2px -2px 3px #2b2b2b,
     3px -3px 3px #242424,
@@ -46,5 +72,11 @@
     -ms-transform: skewY(1deg);
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
-    z-index: 3;
+    z-index: 50;
+}
+
+.about_me {
+    color: #ecf0f1;
+    font-size: calc(0.75vw + 0.25em);
+    z-index: 50;
 }
