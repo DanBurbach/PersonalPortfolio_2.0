@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import Welcome from './Welcome';
 import MyName from './MyName';
 import WhoIAm from './WhoIAm'
