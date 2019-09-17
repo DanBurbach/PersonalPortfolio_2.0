@@ -169,6 +169,12 @@ ul#skillIcons li:hover a img {
     transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
 }
 
+#skillIcons {
+    position: relative;
+    display: block;
+}
+
+
 @media only screen and (min-width: 1280px) {
     .skill_icons_main {
         width: 100vw;

@@ -28,6 +28,7 @@ class Skills extends Component {
             <ul id="skillIcons">
               <li>
                 <a href="https://reactjs.org">
+                  <p>React</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_ReactJSIcon.png")}
                     alt="React"
@@ -37,6 +38,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://redux.js.org">
+                  <p>Redux</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_ReduxIcon.png")}
                     alt="Redux"
@@ -46,6 +48,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+                  <p>HTML5</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_HTML5Icon.png")}
                     alt="HTML5"
@@ -55,6 +58,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <p>Javascript</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_JSIcon.png")}
                     alt="Javascript"
@@ -64,6 +68,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                  <p>CSS3</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_CSS3Icon.png")}
                     alt="CSS3"
@@ -73,6 +78,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://angular.io">
+                  <p>Angular</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_AngularIcon.svg")}
                     alt="Angular"
@@ -88,6 +94,7 @@ class Skills extends Component {
             <ul id="skillIcons">
               <li>
                 <a href="https://www.ruby-lang.org/en/">
+                  <p>Ruby</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_RubyIcon.png")}
                     alt="Ruby"
@@ -97,18 +104,10 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://rubyonrails.org">
+                  <p>Rails</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_RailsIcon.png")}
                     alt="Rails"
-                    width="70vw"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://firebase.google.com">
-                  <img
-                    src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
-                    alt="Google Firebase"
                     width="70vw"
                   />
                 </a>
@@ -121,6 +120,7 @@ class Skills extends Component {
             <ul id="skillIcons">
               <li>
                 <a href="https://github.com">
+                  <p>GitHub</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_GitHubIcon.png")}
                     alt="GitHub"
@@ -130,6 +130,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://git-scm.com">
+                  <p>Git</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_GitIcon.png")}
                     alt="Git"
@@ -138,7 +139,18 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
+                <a href="https://firebase.google.com">
+                  <p>Google Firebase</p>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
+                    alt="Google Firebase"
+                    width="70vw"
+                  />
+                </a>
+              </li>
+              <li>
                 <a href="https://www.heroku.com">
+                  <p>Heroku</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
                     alt="Heroku"
@@ -154,6 +166,7 @@ class Skills extends Component {
             <ul id="skillIcons">
               <li>
                 <a href="https://code.visualstudio.com">
+                  <p>VS Code</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
                     alt="Visual Studio Code"
@@ -163,6 +176,7 @@ class Skills extends Component {
               </li>
               <li>
                 <a href="https://atom.io">
+                  <p>Atom</p>
                   <img
                     src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
                     alt="Atom"
