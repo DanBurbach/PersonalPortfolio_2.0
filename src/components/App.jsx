@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {};
   }
 
-
   render() {
     return (
       <div className="App">
