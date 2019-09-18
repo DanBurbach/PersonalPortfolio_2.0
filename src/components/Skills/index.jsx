@@ -149,6 +149,16 @@ class Skills extends Component {
                 </a>
               </li>
               <li>
+                <a href="https://www.netlify.com">
+                  <p>Netlify</p>
+                  <img
+                    src={require("./../../assets/experience_icons/exp_NetlifyIcon.png")}
+                    alt="Netlify"
+                    width="120vw"
+                  />
+                </a>
+              </li>
+              <li>
                 <a href="https://www.heroku.com">
                   <p>Heroku</p>
                   <img

@@ -1,5 +1,5 @@
 .skillsMain {
-    padding: 1em;
+    padding: 0.5em;
     width: calc(100vw - 5em);
     max-width: 50em;
     margin: 0 auto;
@@ -7,7 +7,6 @@
 }
 
 .skillsMain h2 {
-    padding-left: 0.5em;
     padding-top: 0.75em;
     color: #ecf0f1;
     font-family: 'Montserrat',
@@ -120,6 +119,7 @@
 .skill_icons_main {
     height: auto;
     width: 100%;
+    left: -4em;
     position: relative;
     background-color: transparent;
 }
