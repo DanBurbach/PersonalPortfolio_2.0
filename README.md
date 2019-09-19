@@ -40,10 +40,6 @@ A personal website and portfolio page. Impliments smooth scrolling, parallax, co
   [Google reCAPTCHA](https://www.google.com/recaptcha)
   Contact Form Anti-Bot Security
 
-  [AOS - Animate on Scroll](https://github.com/michalsnik/aos)
-  Animations with div's on scroll. v2.3.4
-  (Work In Progress)
-
 ## __Future Development__
 
   - [ ] Blog

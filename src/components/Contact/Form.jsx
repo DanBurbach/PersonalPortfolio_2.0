@@ -5,6 +5,8 @@ import 'jquery';
 
 import * as emailjs from 'emailjs-com';
 
+import { getSiteKey } from "../../config";
+
 import TextArea from './TextArea';
 import Input from './Input';
 import "./../../assets/Footer_Form.css";
@@ -131,12 +133,10 @@ class Form extends Component {
   };
 
   render() {
+    const sitekey = getSiteKey;
+
     return (
       <div className="container_contactMe">
-        {/* <br />
-        <div className="contact_title">Contact Me</div>
-        <br /> */}
-
         <div>
           <form
             ref={element => (this.myContactFormRef = element)}
@@ -191,17 +191,13 @@ class Form extends Component {
             >
               Submit
             </button>
-            <button
-              type="reset"
-              value="Reset"
-              onClick={this.handleResetForm}
-            >
+            <button type="reset" value="Reset" onClick={this.handleResetForm}>
               Reset
             </button>
-            <Reaptcha
-              theme="dark"
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-              onVerify={this.onVerify}
+            <Reaptcha 
+              theme="dark" 
+              sitekey={sitekey} 
+              onVerify={this.onVerify} 
             />
           </form>
         </div>

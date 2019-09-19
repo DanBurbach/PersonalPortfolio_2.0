@@ -21,7 +21,6 @@
     height: 90vh;
     z-index: 500;
     position: relative;
-    /* background: linear-gradient(#161e49, #1400cc, #87ceeb); */
 }
 
 .skills {
@@ -30,7 +29,6 @@
     height: 100vh;
     z-index: 50;
     position: relative;
-    /* background: linear-gradient(#87ceeb, skyblue);   */
 }
 
 .projects {
@@ -39,7 +37,6 @@
     height: 90vh;
     z-index: 50;
     position: relative;
-    /* background: linear-gradient(skyblue, rgb(13, 80, 13)); */
 }
 
 .parallax {
@@ -49,7 +46,6 @@
 .contact {
     height: 5vh;
     z-index: 500;
-    /* background: linear-gradient(rgb(13, 80, 13), rgb(63, 35, 17), #000000); */
 }
 
 #timeline {
