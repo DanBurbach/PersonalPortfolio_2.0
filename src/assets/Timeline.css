@@ -16,7 +16,7 @@
     left: 50%;
     margin-left: -1px;
     width: 2px;
-    height: 175vh;
+    height: 225vh;
     background: #CCD1D9;
     z-index: 5;
 }
@@ -24,8 +24,8 @@
     content:"";
     position: absolute;
     z-index: -1;
-    top: 100em;
-    bottom: -80em;
+    top: 102em;
+    bottom: -89em;
     left: 50%;
     border-left: 2px dotted
 }
