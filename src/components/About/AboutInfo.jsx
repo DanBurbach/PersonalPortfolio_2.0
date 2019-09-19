@@ -12,10 +12,6 @@ function AboutInfo(props) {
             <h4>Who am I...</h4>
             <div>{props.who}</div>
           </div>
-          {/* <div>
-            <h4>Where am I from...</h4>
-            <div>{props.where}</div>
-          </div> */}
           <div>
             <h4>How do I think...</h4>
             <div>{props.thoughts}</div>
@@ -29,17 +25,14 @@ function AboutInfo(props) {
             <div>{props.focus}</div>
           </div>
           <br />
-          {/* <h4>- Daniel Burbach </h4> */}
         </div>
       </div>
-    // </div>
   );
 }
 
 AboutInfo.propTypes = {
   title: PropTypes.string.isRequired,
   who: PropTypes.string.isRequired,
-  // where: PropTypes.string.isRequired,
   thoughts: PropTypes.string.isRequired,
   creativity: PropTypes.string.isRequired,
   focus: PropTypes.string.isRequired

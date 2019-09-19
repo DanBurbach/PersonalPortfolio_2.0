@@ -19,8 +19,10 @@ class Timeline extends Component {
             <div className="timeline-content">
               <h3>1987</h3>
               <span>
-                First time using any language: DOS. Played "Donald Ducks's
-                Playground" often.{" "}
+                First time using any language: DOS. 
+                <p/>
+                "Donald Ducks's
+                Playground"
               </span>
             </div>
           </div>
@@ -41,7 +43,10 @@ class Timeline extends Component {
             <div className="marker" />
             <div className="timeline-content">
               <h3>1997</h3>
-              <span>Use of MasterCAM Mill in high school engineering</span>
+              <span>Use of MasterCAM Mill in high school engineering
+                <p/>
+                "Legend of Zelda"
+              </span>
             </div>
           </div>
 
@@ -67,7 +72,7 @@ class Timeline extends Component {
           <div className="timeline-block timeline-block-left">
             <div className="marker" />
             <div className="timeline-content">
-              <h3>2001 - 2005</h3>
+              <h3>2005 - 2001</h3>
               <span>
                 University of Oregon
                 <p />
@@ -99,7 +104,7 @@ class Timeline extends Component {
           <div className="timeline-block timeline-block-left">
             <div className="marker" />
             <div className="timeline-content">
-              <h3>2007 - 2008</h3>
+              <h3>2008 - 2007</h3>
               <span>
                 Americorps with Habitat for Humanity
                 <p />
@@ -124,7 +129,7 @@ class Timeline extends Component {
           <div className="timeline-block timeline-block-left">
             <div className="marker" />
             <div className="timeline-content">
-              <h3>2013 - 2018</h3>
+              <h3>2018 - 2013</h3>
               <span>
                 ACME Scenic and Display
                 <p />

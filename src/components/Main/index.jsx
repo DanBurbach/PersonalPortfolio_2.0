@@ -8,6 +8,7 @@ import Projects from '../Projects';
 import Contact from '../Contact';
 import Clouds from './../Skills/Clouds';
 import Balloon from './../Skills/Balloon';
+import PersonalPhoto from "../Contact/PersonalPhoto";
 import ParallaxWallpaper from '../Projects/Parallax_Wallpaper';
 
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
@@ -104,7 +105,7 @@ class Main extends Component {
                   <div className="particles">
                     <ParticlesDisplay />
                   </div>
-                    <Intro />
+                  <Intro />
                 </div>
               </div>
             </div>
@@ -244,8 +245,18 @@ class Main extends Component {
                           </li>
                         </ul>
                       </div>
+
+                      <div className="col social">
+                        {/* <ul>
+                          <li> */}
+                            <PersonalPhoto />
+                          {/* </li>
+                        </ul> */}
+                      </div>
+
                       <div className="clearfix"></div>
                     </div>
+
                     <div className="bottom-bar">
                       All Rights Reserved © 2019{" "}
                       <a href="#Terms_and_Conditions" className="btn_terms">

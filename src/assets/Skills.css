@@ -132,11 +132,22 @@
     font-family: inherit;
     font-size: 1em;
     line-height: 1.2em;
-    color: rgba(0, 0, 0, 0.363);
+    color: rgba(0, 0, 0, 0.767);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.25em;
     text-align: left;
+}
+
+.skill_icons_main .col p {
+    font-family: inherit;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
 }
 
 .skill_icons_main ul {

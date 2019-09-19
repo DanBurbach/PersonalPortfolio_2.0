@@ -1,12 +1,9 @@
 /* about main wrapper --------------------------------- */
 .about_main {
     box-sizing: border-box;
-    /* z-index: 50; */
-    /* padding-top: 2em;
-    width: 100%; */
 }
+
 .about_item {
-    /* display: inline-block; */
     float: left;
     padding-left: 2em;
     margin-bottom: 1em;

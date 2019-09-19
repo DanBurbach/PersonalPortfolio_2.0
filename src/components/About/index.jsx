@@ -3,22 +3,19 @@ import AboutInfo from './AboutInfo';
 
 import Timeline from "../About/Timeline";
 
-
 import './../../assets/About.css';
 
 const masterPersonalList = [
   {
     title: "How do you describe yourself?",
     who:
-      "Coming from a background in theater and design creativity and engineered creation has always been a part of my life. When looking at a project I think about what the audience is seeing, what is the main focus or importance of the project, and what the audience will walk away from when they leave.",
-    // where:
-    //   "Most of my life I have lived in the Pacific North West, however I do really enjoy travelling. Out of that I have been to not only England, but France and most of Southern and Eastern Spain as well. My times there were amazing and left me with wanting to see more of the world whenever I can. Because its only when we leave somewhere that we love do we appreciate the individuality that a location, and a home, has to offer.",
+      "Originally from the Pacific NW - Portland, Oregon - I was interested in computers and design from an early age. After having dysentary, being saved by a princess, uploading my first 'To Do' list, and losing horribly in Sims I decided to take the plunge into Front-End Development. That, and I really enjoy a good challenge, learning, and being creative.",
     thoughts:
-      "I look for more information and try to find out as much about something that I can. I enjoy a challenge but appreciating the simplicity of things, I to have a strong affinity for tea, a good book, video games, a laugh at a joke, a technical challenge, and relaxing at home.",
+      "Looking for more information, I try to find out as much about something that I can. I enjoy a challenge but appreciating the simplicity of things, I to have a strong affinity for tea, a good book, video games, a laugh at a joke, a technical challenge, and relaxing at home.",
     creativity:
-      "What is the wow? What causes me to want to talk, look at, and learn more about the subject? What can I do or go see myself that will make me or anyone else say Holy Cow, thats amazing!!! If I ever do, however, come up upon not really knowing what to think or are stumped about something I find a trip outdoors is always the best fix.",
+      "Coming from a background in theater design and industrial design - engineered creation has always been a part of my life. When looking at a project I think about what the audience is seeing, what is the main focus or importance of the project, and what the audience will walk away from when they leave.",
     focus:
-      "Play hard, work hard. The balance is important and figuring out what works is always changing for me. If listening to music while I code doesn't work out, there is always more time later."
+      "'Play hard, work hard'...right? Balance is important and figuring out what works is always changing for me. If listening to music while I code doesn't work out, taking a walk and doing some sketchwork is always a great way to focus."
   }
 ];
 
