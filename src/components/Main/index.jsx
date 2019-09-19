@@ -211,7 +211,7 @@ class Main extends Component {
                               <img
                                 src={require("./../../assets/icons/linkedin_icon.svg")}
                                 alt="LinkedIn"
-                                width="90px"
+                                width="80px"
                               />
                             </a>
                           </li>
@@ -220,7 +220,7 @@ class Main extends Component {
                               <img
                                 src={require("./../../assets/icons/github_icon.svg")}
                                 alt="GitHub"
-                                width="90px"
+                                width="80px"
                               />
                             </a>
                           </li>
@@ -229,7 +229,7 @@ class Main extends Component {
                               <img
                                 src={require("./../../assets/icons/pinterest_icon.svg")}
                                 alt="Pintrest"
-                                width="90px"
+                                width="80px"
                               />
                             </a>
                           </li>
@@ -238,7 +238,7 @@ class Main extends Component {
                               <img
                                 src={require("./../../assets/icons/twitter_icon.svg")}
                                 alt="Twitter"
-                                width="90px"
+                                width="80px"
                               />
                             </a>
                           </li>

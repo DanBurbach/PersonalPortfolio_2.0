@@ -52,7 +52,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_HTML5Icon.png")}
                     alt="HTML5"
-                    width="80vw"
+                    width="75vw"
                   />
                 </a>
               </li>
@@ -62,7 +62,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_JSIcon.png")}
                     alt="Javascript"
-                    width="60vw"
+                    width="58vw"
                   />
                 </a>
               </li>
@@ -72,7 +72,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_CSS3Icon.png")}
                     alt="CSS3"
-                    width="55vw"
+                    width="53vw"
                   />
                 </a>
               </li>
@@ -82,7 +82,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_AngularIcon.svg")}
                     alt="Angular"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -98,7 +98,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_RubyIcon.png")}
                     alt="Ruby"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -108,7 +108,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_RailsIcon.png")}
                     alt="Rails"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -124,7 +124,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_GitHubIcon.png")}
                     alt="GitHub"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -134,7 +134,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_GitIcon.png")}
                     alt="Git"
-                    width="120vw"
+                    width="110vw"
                   />
                 </a>
               </li>
@@ -144,7 +144,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
                     alt="Google Firebase"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -154,7 +154,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_NetlifyIcon.png")}
                     alt="Netlify"
-                    width="120vw"
+                    width="110vw"
                   />
                 </a>
               </li>
@@ -164,7 +164,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_HerokuIcon.png")}
                     alt="Heroku"
-                    width="70vw"
+                    width="65vw"
                   />
                 </a>
               </li>
@@ -180,7 +180,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
                     alt="Visual Studio Code"
-                    width="60vw"
+                    width="calc(55vw + 0.25em)"
                   />
                 </a>
               </li>
@@ -190,7 +190,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
                     alt="Atom"
-                    width="70vw"
+                    width="calc(55vw + 0.25em)"
                   />
                 </a>
               </li>
