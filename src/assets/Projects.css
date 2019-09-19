@@ -130,10 +130,10 @@
     font-weight: 200;
     border-radius: 0.75em;
     text-transform: uppercase;
-    padding: 1vw;
+    padding: 0.8vw;
     position: absolute;
     width: 10em;
-    left: 12%;
+    left: 11%;
     top: 60%;
     text-align: center;
     opacity: 0;
@@ -159,10 +159,10 @@
     font-weight: 200;
     border-radius: 0.75em;
     text-transform: uppercase;
-    padding: 1vw;
+    padding: 0.8vw;
     position: absolute;
     width: 10em;
-    right: 12%;
+    right: 11%;
     top: 60%;
     text-align: center;
     opacity: 0;
