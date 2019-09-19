@@ -17,6 +17,9 @@ A personal website and portfolio page. Impliments smooth scrolling, parallax, co
 ```
 ## __Setup/Installation Requirements__
 
+  [Click Here](https://awesome-stonebraker-4b08b4.netlify.com)
+  (Hosted on Netlify)
+
   * Clone repository
 
   * Open terminal
