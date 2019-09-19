@@ -21,20 +21,22 @@ class Projects extends Component {
               <h2>Coding Against Humility</h2>
             </div>
             <div className="galleryOverlay" />
-            <div className="galleryDescription">
-              <p>
-                A game based off of a hit cardgame. Uses two JSON files for
-                white and black cards. Authentication through Firebase, heavy
-                use of CSS for animation of black card flip and white card hand,
-                and use of drag and drop.
-              </p>
-              <p>React.js, Redux, CSS3, HTML5, and Firebase Database</p>
-            </div>
-            <div className="galleryButtonSource">
-              <a href="https://github.com/DanBurbach/Coding-Against-Humility">
-                Source Code
-              </a>
-            </div>
+              <div className="galleryDescription">
+                <p>
+                  A game based off of a hit cardgame. Uses two JSON files for
+                  white and black cards. Authentication through Firebase, heavy
+                  use of CSS for animation of black card flip and white card hand,
+                  and use of drag and drop.
+                </p>
+                <p>React.js, Redux, CSS3, HTML5, and Firebase Database</p>
+              </div>
+              <div className="galleryButtonGroup">
+                <div className="galleryButtonSource">
+                  <a href="https://github.com/DanBurbach/Coding-Against-Humility">
+                  Source Code
+                  </a>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -55,6 +57,7 @@ class Projects extends Component {
               </p>
               <p>React.js, Redux, CSS3, HTML5, and API calls</p>
             </div>
+          <div className="galleryButtonGroup">
             <div className="galleryButtonSource">
               <a href="https://github.com/DanBurbach/rick_and_morty_api_react_v2">
                 Source Code
@@ -66,6 +69,7 @@ class Projects extends Component {
               </a>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="galleryItem">
@@ -85,6 +89,7 @@ class Projects extends Component {
               </p>
               <p>Javascript, CSS3, and HTML5</p>
             </div>
+          <div className="galleryButtonGroup">
             <div className="galleryButtonSource">
               <a href="https://github.com/DanBurbach/vacation-quiz">
                 Source Code
@@ -96,6 +101,7 @@ class Projects extends Component {
               </a>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="galleryItem">
@@ -118,12 +124,14 @@ class Projects extends Component {
               <p>Typescript, Angular, Firebase Database, CSS3, and HTML5</p>
               <br />
             </div>
+          <div className="galleryButtonGroup">
             <div className="galleryButtonSource">
               <a href="https://github.com/DanBurbach/SocialMediaGame_Main">
                 Source Code
               </a>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="galleryItem">
@@ -144,12 +152,14 @@ class Projects extends Component {
               <p>Ruby 2.5.1, Rails 5, HTML5, CSS3, PostgreSQL, Bycrpt</p>
               <br />
             </div>
+          <div className="galleryButtonGroup">
             <div className="galleryButtonSource">
               <a href="https://github.com/DanBurbach/battle-ships">
                 Source Code
               </a>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="galleryItem">
@@ -170,6 +180,7 @@ class Projects extends Component {
               </p>
               <p>Javascript, Bootstrap, HTML5, CSS3, and jQuery</p>
             </div>
+          <div className="galleryButtonGroup">
             <div className="galleryButtonSource">
               <a href="https://github.com/DanBurbach/blind-date-simulator">
                 Source Code
@@ -181,6 +192,7 @@ class Projects extends Component {
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     );

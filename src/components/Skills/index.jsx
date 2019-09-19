@@ -115,6 +115,7 @@ class Skills extends Component {
             </ul>
           </div>
 
+          
           <div className="col">
             <h3>Storage/Hosting/Core</h3>
             <ul id="skillIcons">
@@ -180,7 +181,8 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_VSCodeIcon.png")}
                     alt="Visual Studio Code"
-                    width="calc(55vw + 0.25em)"
+                    width="60vw"
+                    
                   />
                 </a>
               </li>
@@ -190,7 +192,7 @@ class Skills extends Component {
                   <img
                     src={require("./../../assets/experience_icons/exp_AtomIcon.png")}
                     alt="Atom"
-                    width="calc(55vw + 0.25em)"
+                    width="70vw"
                   />
                 </a>
               </li>
