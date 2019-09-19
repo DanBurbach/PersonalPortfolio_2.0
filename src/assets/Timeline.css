@@ -1,6 +1,6 @@
 /* timeline box */
 .timeline_container {
-    top: 15vh;
+    top: 20vh;
     width: auto;
     height: 50vh;
     padding: 3em 0;
@@ -21,20 +21,11 @@
     z-index: 5;
 }
 .timeline_dotted:before {
-    /* content: '';
-    position: absolute;
-    top: 170em;
-    left: 50%;
-    margin-left: -1px;
-    width: 6px dotted;
-    height: 5vh;
-    background: #CCD1D9;
-    z-index: 5; */
     content:"";
     position: absolute;
     z-index: -1;
-    top: 98em;
-    bottom: -78em;
+    top: 100em;
+    bottom: -80em;
     left: 50%;
     border-left: 2px dotted
 }
