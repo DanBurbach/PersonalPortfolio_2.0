@@ -1,4 +1,5 @@
 # Personal Portfolio Website v2.0
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa3e8feb-9dc2-44d1-838a-2bd35150a979/deploy-status)](https://app.netlify.com/sites/awesome-stonebraker-4b08b4/deploys)
 ![Personal Landing Page](https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/README_Intro_Screenshot.png?raw=true)
 
 ### __Created by Dan Burbach__
