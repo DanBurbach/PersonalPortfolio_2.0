@@ -5,31 +5,26 @@ import "./../../assets/Timeline.css";
 class Timeline extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
 
   render() {
     return (
-      <div>
-        <div className="timeline_container">
-          <div className="timeline_dotted" />
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+      <div className="timelineMaster">
+        <div className="timeLine">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>1987</h3>
               <span>
-                First time using any language: DOS. 
-                <p/>
-                "Donald Ducks's
-                Playground"
+                First time using any operating system: DOS.
+                <p />
+                "Donald Duck's Playground"
               </span>
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
               <h3>1991</h3>
               <span>
                 First time using a Mac
@@ -39,28 +34,26 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>1997</h3>
-              <span>Use of MasterCAM Mill in high school engineering
-                <p/>
+              <span>
+                Use of MasterCAM Mill in high school engineering
+                <p />
                 "Legend of Zelda"
               </span>
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
               <h3>1999</h3>
               <span>Adobe Photoshop for high school photo journalism</span>
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>2000 - 2001</h3>
               <span>
                 Clackamas Community College.
@@ -69,10 +62,9 @@ class Timeline extends Component {
               </span>
             </div>
           </div>
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
-              <h3>2005 - 2001</h3>
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
+              <h3>2001 - 2005</h3>
               <span>
                 University of Oregon
                 <p />
@@ -88,9 +80,8 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>2006</h3>
               <span>
                 Reed & Cross
@@ -101,10 +92,9 @@ class Timeline extends Component {
               </span>
             </div>
           </div>
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
-              <h3>2008 - 2007</h3>
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
+              <h3>2007 - 2008</h3>
               <span>
                 Americorps with Habitat for Humanity
                 <p />
@@ -113,9 +103,8 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>2009 - 2013</h3>
               <span>
                 American Tinnitus Association
@@ -126,10 +115,9 @@ class Timeline extends Component {
               </span>
             </div>
           </div>
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
-              <h3>2018 - 2013</h3>
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
+              <h3>2013 - 2018</h3>
               <span>
                 ACME Scenic and Display
                 <p />
@@ -140,9 +128,8 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>2018-2019</h3>
               <span>
                 Epicodus Code School
@@ -154,9 +141,8 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_left">
+            <div className="timeline_content">
               <h3>2019</h3>
               <span>
                 Pancake Creative
@@ -171,9 +157,8 @@ class Timeline extends Component {
             </div>
           </div>
 
-          <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
+          <div className="timeline_container timeline_right">
+            <div className="timeline_content">
               <h3>2019 +</h3>
               <span>
                 Further knowledge of Front-End Development and creation of UI/UX
@@ -183,20 +168,6 @@ class Timeline extends Component {
               </span>{" "}
             </div>
           </div>
-
-          {/* <div className="timeline-block timeline-block-left">
-            <div className="marker" />
-            <div className="timeline-content">
-              <span>Some work experience</span>
-            </div>
-          </div> */}
-
-          {/* <div className="timeline-block timeline-block-right">
-            <div className="marker" />
-            <div className="timeline-content">
-              <span>Some work experience</span>
-            </div>
-          </div> */}
         </div>
       </div>
     );

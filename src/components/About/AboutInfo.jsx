@@ -5,9 +5,7 @@ function AboutInfo(props) {
   return (
     <div>
         <div>
-          <br />
           <h3>{props.title}</h3>
-          <br/>
           <div>
             <h4>Who am I...</h4>
             <div>{props.who}</div>
@@ -24,7 +22,6 @@ function AboutInfo(props) {
             <h4>How do I focus...</h4>
             <div>{props.focus}</div>
           </div>
-          <br />
         </div>
       </div>
   );
