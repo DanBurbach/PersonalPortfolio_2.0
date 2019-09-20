@@ -7,7 +7,7 @@
     position: absolute;
     width: 100vw;
     letter-spacing: 0.005em;
-    font-size: calc(2vw + 0.25em);
+    font-size: calc(0.75vw + 1em);
     height: 4vh;
     line-height: 4vh;
     text-align: center;
