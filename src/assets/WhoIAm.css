@@ -11,15 +11,10 @@
     height: 4vh;
     line-height: 4vh;
     text-align: center;
-    text-shadow: 2px -1px 0 #f8f8f8,
-        2px -2px 0 #b3b3b3,
-        3px -3px 0 #838383,
-        4px -4px 0 #8b8b8b,
-        5px -5px 0 #696969,
-        6px -6px 0 #494949,
-        7px -7px 0 #3a3a3a,
-        8px -8px 0 #353535,
-        9px -9px 0 #252525;
+    text-shadow: 2px -1px 0 #494949,
+        2px -2px 0 #3a3a3a,
+        3px -3px 0 #353535,
+        4px -4px 0 #252525;
     -moz-transform-origin: bottom left;
     -webkit-transform-origin: bottom left;
     -ms-transform-origin: bottom left;
