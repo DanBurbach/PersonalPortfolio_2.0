@@ -1,27 +1,23 @@
 .skillsMain {
-    padding: 0.5em;
-    width: calc(100vw - 5em);
-    max-width: 50em;
-    margin: 0 auto;
-    font-size: calc(0.8vw + 0.15em);
+    width: 95%;
+    max-width: 40em;
+    box-sizing: border-box;
 }
 
 .skillsMain h2 {
-    padding-top: 0.75em;
+    padding-top: 1em;
     color: #ecf0f1;
     font-family: 'Montserrat',
-        sans-serif;
+    sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    width: 30vw;
-    font-size: calc(2.25vw + 0.15em);
-    height: 2vh;
-    line-height: 2vh;
-    text-align: center;
-    text-shadow:
-        2px -2px 3px #2b2b2b,
-        3px -3px 3px #242424,
-        4px -4px 3px #131313;
+    width: 45vw;
+    font-size: calc(0.5vw + 1.5em);
+    line-height: calc(0.2vw + 1.4em);
+    text-align: left;
+    text-shadow: 2px -2px 3px #2b2b2b,
+    3px -3px 3px #242424,
+    4px -4px 3px #131313;
     -moz-transform-origin: bottom left;
     -webkit-transform-origin: bottom left;
     -ms-transform-origin: bottom left;
@@ -31,21 +27,28 @@
     -ms-transform: skewY(1deg);
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
-    z-index: 20;
+    z-index: 50;
 }
 
 /* skill graph ----------------------------------- */
 
+.graph_wrapper {
+    padding-top: 4vh;
+    position: relative;
+}
+
 .graph {
     height: 2em;
-    width: calc(60vw + 0.15em);
-    margin: 0.6em;
+    width: calc(75vw + 2em);
+    margin: 0.4em;
     line-height: 2em;
     font-size: 1em;
     color: white;
-    padding: 0 0 0 0.8em;
+    padding: 0 0 0 1em;
     position: relative;
     z-index: 4;
+    float:left;
+    overflow: hidden;
 }
 
 .graph::before {
@@ -116,10 +119,20 @@
 
 /* experience icons --------------------------------- */
 
+.skill_item_icons {
+    padding-top: 4vh;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .skill_icons_main {
+    float: left;
     height: auto;
     width: 100%;
-    left: -4em;
     position: relative;
     background-color: transparent;
 }
@@ -129,6 +142,7 @@
 }
 
 .skill_icons_main .col h3 {
+    padding-left: 2em;
     font-family: inherit;
     font-size: 1em;
     line-height: 1.2em;
@@ -142,7 +156,7 @@
 .skill_icons_main .col p {
     font-family: inherit;
     font-size: 0.8em;
-    line-height: 1.2em;
+    line-height: 1em;
     color: rgba(0, 0, 0, 0.61);
     font-weight: 800;
     text-transform: uppercase;
@@ -153,7 +167,7 @@
 .skill_icons_main ul {
     list-style-type: none;
     margin: 0;
-    padding: 0.5em;
+    padding: 0.25em;
     overflow: hidden;
 }
 
@@ -162,7 +176,7 @@
 }
 
 .skill_icons_main ul li a {
-    padding: 0.25em;
+    padding-left: 1em;
     display: block;
     text-align: center;
     text-decoration: none;
