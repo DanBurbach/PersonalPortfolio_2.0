@@ -13,7 +13,7 @@ Personal Website v2.0
 ## __Description__
 
 ```
-A personal website and portfolio page. Impliments smooth scrolling, parallax, contact form (with emailJS for back-end handling and reCAPTCHA from Google for anti-bot spamming). Heavy use of CSS and styling for animations.
+A personal website and portfolio page. Implements smooth scrolling, parallax, contact form (with emailJS for back-end handling and reCAPTCHA from Google for anti-bot spamming). Heavy use of CSS and styling for animations.
 ```
 ## __Setup/Installation Requirements__
 
