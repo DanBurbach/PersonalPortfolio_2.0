@@ -100,8 +100,8 @@
 /* navigation menu ----------------------------------- */
 .navMenu {
     position: fixed;
-    left: 0.25em;
-    top: calc(-1vw + 3.25em);
+    left: 0.0625em;
+    top: calc(-2vw + 2.3em);
     font-size: 2em;
     cursor: pointer;
     z-index: 5000;
@@ -123,9 +123,9 @@
     position: fixed;
     color: #fff;
     z-index: 5000;
-    top: calc(-1vw + 2.75em);
+    top: calc(-2vw + 1em);
     left: -1em;
-    width: calc(0.5vw + 4.25em);
+    width: calc(0.5vw + 4em);
     height: calc(-1vw + 8.4em);
     border-radius: 0.5em;
     border:0px solid #000;
