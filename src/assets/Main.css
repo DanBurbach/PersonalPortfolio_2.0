@@ -24,6 +24,7 @@
 }
 
 .skills {
+    clear: both;
     content: center;
     padding: 6em;
     height: 120vh;
@@ -32,6 +33,7 @@
 }
 
 .projects {
+    clear: both;
     padding-left: 5em;
     padding-right: 5em;
     height: 90vh;
@@ -44,6 +46,7 @@
 }
 
 .contact {
+    clear: both;
     height: 5vh;
     z-index: 500;
 }
@@ -98,7 +101,7 @@
 .navMenu {
     position: fixed;
     left: 0.25em;
-    top: 12.5%;
+    top: calc(-1vw + 3.25em);
     font-size: 2em;
     cursor: pointer;
     z-index: 5000;
@@ -120,11 +123,11 @@
     position: fixed;
     color: #fff;
     z-index: 5000;
-    top: 1em;
+    top: calc(-1vw + 2.75em);
     left: -1em;
-    width: 5em;
-    height: 9.5em;
-    border-radius: 1em;
+    width: calc(0.5vw + 4.25em);
+    height: calc(-1vw + 8.4em);
+    border-radius: 0.5em;
     border:0px solid #000;
     text-shadow:-3px 0px 4px #000;
     box-shadow: -3px 0px 4px 4px hsla(0, 0%, 0%, 0.66);
