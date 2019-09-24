@@ -48,7 +48,7 @@ class Timeline extends Component {
           <div className="timeline_container timeline_left">
             <div className="timeline_content">
               <h3>1999</h3>
-              <span>Adobe Photoshop for high school photo journalism</span>
+              <span>Adobe Photoshop for high school photo-journalism</span>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ class Timeline extends Component {
                 <p />
                 Political Science and Fine Arts
                 <p />
-                Including Typeography and Graphic Design. Extensive use of Adobe
+                Including Typography and Graphic Design. Extensive use of Adobe
                 Photoshop and Illustrator
                 <p />
                 Eugene, OR
