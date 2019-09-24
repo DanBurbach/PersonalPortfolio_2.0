@@ -1,12 +1,13 @@
 .container_contactMe {
-    width: calc(25vw + 0.75em);
+    width: calc(30vw + 16em);
     background-color: rgb(63, 63, 63);
-    font-size: calc(0.6vw + 0.25em);
+    font-size: calc(0.6vw + 0.5em);
     color: #ffffff;
     font-weight: 700;
     border-radius: 0.75em;
     text-transform: uppercase;
-    padding: 1.5vw;
+    padding: 1.75vw;
+    margin-top: 3vh;
     position: relative;
 }
 
@@ -20,7 +21,7 @@ textarea {
     border-radius: 0.5em;
     box-sizing: border-box;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     resize: vertical;
 }
 
