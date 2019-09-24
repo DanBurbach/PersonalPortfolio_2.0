@@ -1,6 +1,6 @@
 .skillsMain {
     width: 95%;
-    max-width: 40em;
+    max-width: 100vw;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@
     text-transform: uppercase;
     width: 45vw;
     font-size: calc(0.5vw + 1.5em);
-    line-height: calc(0.2vw + 1.4em);
+    line-height: calc(0.1vw + 1.2em);
     text-align: left;
     text-shadow: 2px -2px 3px #2b2b2b,
     3px -3px 3px #242424,
@@ -30,16 +30,34 @@
     z-index: 50;
 }
 
+
+.skills_item {
+    float: left;
+    width: 45%;
+}
+
+.skills_wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .skills_item {
+        width: 90%;
+    }
+}
+
 /* skill graph ----------------------------------- */
 
 .graph_wrapper {
-    padding-top: 4vh;
+    padding-top: 3vh;
     position: relative;
 }
 
 .graph {
     height: 2em;
-    width: calc(75vw + 2em);
+    width: calc(55vw + 2em);
     margin: 0.4em;
     line-height: 2em;
     font-size: 1em;
@@ -108,7 +126,7 @@
     max-width: 43%;
 }
 
-@-webkit-keyframes bar-before {
+@keyframes bar-before {
   0%{
     width: 0px;
   }
@@ -120,7 +138,7 @@
 /* experience icons --------------------------------- */
 
 .skill_item_icons {
-    padding-top: 4vh;
+    padding-top: 3vh;
 }
 
 .row::after {
@@ -141,22 +159,22 @@
     display: inline-block;
 }
 
-.skill_icons_main .col h3 {
-    padding-left: 2em;
+.skill_icons_main h3 {
+    padding-left: 1em;
     font-family: inherit;
     font-size: 1em;
-    line-height: 1.2em;
+    line-height: 0.25em;
     color: rgba(0, 0, 0, 0.767);
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.125em;
     text-align: left;
 }
 
 .skill_icons_main .col p {
     font-family: inherit;
     font-size: 0.8em;
-    line-height: 1em;
+    line-height: 0.25em;
     color: rgba(0, 0, 0, 0.61);
     font-weight: 800;
     text-transform: uppercase;
@@ -167,7 +185,7 @@
 .skill_icons_main ul {
     list-style-type: none;
     margin: 0;
-    padding: 0.25em;
+    padding: 0.0625em;
     overflow: hidden;
 }
 
@@ -176,6 +194,7 @@
 }
 
 .skill_icons_main ul li a {
+    color: rgba(0, 0, 0, 0.61);
     padding-left: 1em;
     display: block;
     text-align: center;
@@ -200,16 +219,17 @@ ul#skillIcons li:hover a img {
 }
 
 
-@media only screen and (min-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .skill_icons_main {
         width: 100vw;
         margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 1139px) {
+/* ipad sizing --------------------- */
+@media (min-width: 767px) and (max-width: 1024px) {
     .skill_icons_main {
-        width: 100vw;
+        width: 90%;
         display: block;
     }
 
@@ -218,7 +238,7 @@ ul#skillIcons li:hover a img {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
     .skill_icons_main .col{
         width: 33%;
     }
@@ -232,22 +252,22 @@ ul#skillIcons li:hover a img {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .skill_icons_main .col {
-        width: 50%;
+@media (min-width: 481px) and (max-width: 768px) {
+    .skill_icons_main .col a{
+        width: 200vw;
     }
 
     .skill_icons_main .col h1 {
-        font-size: 1em;
+        font-size: 0.75em;
     }
 
     .skill_icons_main .col ul li {
-        font-size: 1em;
+        font-size: 0.75em;
     }
 }
 
-@media only screen and (max-width: 340px) {
-    .skill_icons_main .col {
-        width: 100%;
+@media (min-width: 320px) and (max-width: 480px) {
+    .skill_icons_main .col a{
+        width: 200vw;
     }
 }
