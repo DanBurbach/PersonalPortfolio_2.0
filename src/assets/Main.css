@@ -11,7 +11,7 @@
 }
 
 .particles {
-    height: 200%;
+    height: 300%;
  }
 
 .about {
@@ -26,7 +26,7 @@
 .skills {
     clear: both;
     content: center;
-    padding: 6em;
+    padding-left: 6em;
     height: 120vh;
     z-index: 50;
     position: relative;
@@ -42,6 +42,7 @@
 }
 
 .parallax {
+    clear: both;
     z-index: 1;
 }
 
@@ -292,7 +293,7 @@
     border-radius: 0.5em;
     position: fixed;
     left: 33vw;
-    z-index: 500;
+    z-index: 600;
     width: 33vw;
     -webkit-transform: translate(0, -500%);
     -ms-transform: translate(0, -500%);
@@ -349,8 +350,8 @@
 }
 
 .modalDialog_contact>div {
-    max-width: 800px;
-    width: calc(27.8vw + 0.75em);
+    max-width: 90%;
+    width: 65%;
     position: relative;
     margin: 2% auto;
     padding: 0px;
@@ -364,9 +365,9 @@
     color: #fff;
     line-height: 25px;
     position: absolute;
-    right: -12px;
+    right: calc(3vw + -2.5em);
     text-align: center;
-    top: -10px;
+    top: calc(1.125vw + -1.25em);
     width: 34px;
     height: 34px;
     text-decoration: none;
@@ -396,7 +397,7 @@
 }
 
 .footer .col {
-    margin-left: 8em;
+    margin-left: 4em;
     display: inline-block;
 }
 
@@ -484,39 +485,206 @@ ul#socialbuttons li:hover a img {
     color: white;
 }
 
-@media only screen and (min-width: 1280px) {
+/* monitor media styling ------------------- */
+@media only screen and (min-width: 1026px) {
     .contain {
         width: 100vw;
         margin: 0 auto;
     }
-}
-
-@media only screen and (max-width: 1139px) {
-    .contain .social {
+    .intro {
+        height: 100vh;
         width: 100vw;
+        z-index: 50;
+        position: relative;
+    }
+
+    .particles {
+        height: 200%;
+    }
+
+    .about {
+        clear: both;
+        color: #ffffff;
+        padding-left: 6em;
+        height: 100vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .skills {
+        clear: both;
+        content: center;
+        padding-left: 6em;
+        height: 110vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .projects {
+        clear: both;
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 90vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+
+    .contact {
+        clear: both;
+        height: 10vh;
+        z-index: 500;
+    }
+}
+/* iPad and iPad Pro Media styling --------------- */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    .footer .col {
+        width: 100%;
+    }
+
+    .footer .col h1 {
+        font-size: 1.5em;
+    }
+
+    .footer .col ul li {
+        font-size: 1.5em;
+    }
+
+    .contain .social {
+        width: 100%;
         display: block;
     }
 
     .social h1 {
         margin: 0px;
     }
+
+    .intro {
+        height: 100vh;
+        width: 100vw;
+        z-index: 50;
+        position: relative;
+    }
+
+    .particles {
+        height: 300%;
+    }
+
+    .about {
+        clear: both;
+        color: #ffffff;
+        padding-left: 6em;
+        height: 80vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .skills {
+        clear: both;
+        content: center;
+        padding-left: 6em;
+        height: 120vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .projects {
+        clear: both;
+        padding-left: 3em;
+        padding-right: 3em;
+        height: 0;
+        z-index: 50;
+        position: relative;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+
+    .contact {
+        clear: both;
+        height: 70vh;
+        z-index: 500;
+    }
+
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     .footer .col {
-        width: 33%;
+        width: 100%;
     }
 
     .footer .col h1 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .footer .col ul li {
-        font-size: 1em;
+        font-size: 1.5em;
+    }
+    .intro {
+        height: 100vh;
+        width: 100vw;
+        z-index: 50;
+        position: relative;
+    }
+
+    .particles {
+        height: 300%;
+    }
+
+    .about {
+        clear: both;
+        color: #ffffff;
+        padding-left: 6em;
+        height: 90vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .skills {
+        clear: both;
+        content: center;
+        padding-left: 6em;
+        height: 90vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .projects {
+        clear: both;
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 90vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+
+    .contact {
+        clear: both;
+        height: 5vh;
+        z-index: 500;
+    }
+    .bottom-bar {
+        position: relative;
+        text-align: center;
+        font-size: .8em;
+        text-transform: uppercase;
+        background: #000;
+        color: white;
     }
 }
-
-@media only screen and (max-width: 500px) {
+/* iphone X media styling -------------- */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
     .footer .col {
         width: 50%;
     }
@@ -528,10 +696,110 @@ ul#socialbuttons li:hover a img {
     .footer .col ul li {
         font-size: 1em;
     }
+    .intro {
+        height: 100vh;
+        width: 100vw;
+        z-index: 50;
+        position: relative;
+    }
+
+    .particles {
+        height: 300%;
+    }
+
+    .about {
+        clear: both;
+        color: #ffffff;
+        padding-left: 3.5em;
+        height: 100vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .skills {
+        clear: both;
+        content: center;
+        padding-left: 3.5em;
+        height: 210vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .projects {
+        clear: both;
+        padding-left: 3.5em;
+        padding-right: 2em;
+        height: 140vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+
+    .contact {
+        clear: both;
+        height: 5vh;
+        z-index: 500;
+    }
 }
 
-@media only screen and (max-width: 340px) {
+/* Galaxy S5 media styling ------------- */
+@media only screen and (max-width: 374px) {
     .footer .col {
-        width: 100%;
+        width: 75%;
+        font-size: 1.5em;
+        /* text-align: center; */
+        float: left;
+    }
+    .intro {
+        height: 100vh;
+        width: 100vw;
+        z-index: 50;
+        position: relative;
+    }
+
+    .particles {
+        height: 200vh;
+    }
+
+    .about {
+        clear: both;
+        color: #ffffff;
+        padding-left: 3.5em;
+        height: 160vh;
+        z-index: 500;
+        position: relative;
+    }
+
+    .skills {
+        clear: both;
+        content: left;
+        padding-left: 3.5em;
+        height: 260vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .projects {
+        clear: both;
+        padding-left: 3.5em;
+        padding-right: 1em;
+        height: 200vh;
+        z-index: 50;
+        position: center;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+
+    .contact {
+        clear: both;
+        height: 5vh;
+        z-index: 500;
     }
 }
