@@ -9,7 +9,7 @@ function ParticlesDisplay() {
         top: 0,
         width: "100vw",
         height: "200vh",
-        zIndex: "3",
+        zIndex: "550",
         backgroundRepeat: "repeat",
         backgroundSize: "cover",
         backgroundPosition: "50% 50%"
