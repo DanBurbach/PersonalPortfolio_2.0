@@ -155,12 +155,13 @@
     background-color: transparent;
 }
 
-.skill_icons_main .col {
+.skill_icons_main #skillIcons {
     display: inline-block;
 }
 
 .skill_icons_main h3 {
     padding-left: 1em;
+    padding-top: 0.5em;
     font-family: inherit;
     font-size: 1em;
     line-height: 0.25em;
@@ -171,12 +172,12 @@
     text-align: left;
 }
 
-.skill_icons_main .col p {
+.skill_icons_main #skillIcons p {
     font-family: inherit;
     font-size: 0.8em;
     line-height: 0.25em;
     color: rgba(0, 0, 0, 0.61);
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-align: center;
@@ -239,35 +240,38 @@ ul#skillIcons li:hover a img {
 }
 
 @media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
-    .skill_icons_main .col{
-        width: 33%;
+    .skill_icons_main #skillIcons {
+        width: 50%;
     }
 
     .skill_icons_main h1 {
         font-size: 1em;
     }
 
-    .skill_icons_main .col ul li {
+    .skill_icons_main #skillIcons ul li {
         font-size: 1em;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .skill_icons_main .col a{
-        width: 200vw;
+    .skill_icons_main #skillIcons a{
+        width: 75%;
     }
 
-    .skill_icons_main .col h1 {
-        font-size: 0.75em;
+    .skill_icons_main #skillIcons h1 {
+        font-size: 1em;
     }
 
-    .skill_icons_main .col ul li {
-        font-size: 0.75em;
+    .skill_icons_main #skillIcons ul li {
+        font-size: 1em;
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .skill_icons_main .col a{
-        width: 200vw;
+    .skill_icons_main #skillIcons a {
+        display: block;
+        justify-content: left;
+        width: 80%;
+        font-size: 1em;
     }
 }

@@ -151,7 +151,7 @@ class Skills extends Component {
                   </li>
                   <li>
                     <a href="https://firebase.google.com">
-                      <p>Google Firebase</p>
+                      <p>Firebase</p>
                       <img
                         src={require("./../../assets/experience_icons/exp_GoogleFirebaseIcon.png")}
                         alt="Google Firebase"
