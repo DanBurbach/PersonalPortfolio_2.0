@@ -32,6 +32,7 @@
 
 .parallaxLayer#p1 {
     top: -8vh !important;
+    object-fit: cover;
     position: absolute !important;
     background-image:url("https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/parallax_images/layer_1.png?raw=true");
     background-position: center;
@@ -76,16 +77,71 @@
 
 .parallaxLayer#p6 {
     object-fit: cover;
-    top: calc(20vw + 38.75em) !important;
+    top: 30vh !important;
     position: absolute !important;
     object-position: 50% 50% !important;
+    opacity: 1;
 }
 
 
 /* media query sizing for parallax based on screen image */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1601px) {
+    .parallaxLayer#p1 {
+        width:140vw;
+        top: -5vh !important;
+        position: center !important;
+        background-image: url("https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/parallax_images/layer_1.png?raw=true");
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.60;
+        object-fit: cover;
+        object-position: 50% 50% !important;
+    }
+
+    .parallaxLayer#p2 {
+        width: 140vw;
+        object-fit: cover;
+        top: 45vh !important;
+        position: center !important;
+        object-position: 50% 50% !important;
+    }
+
+    .parallaxLayer#p3 {
+        width: 140vw;
+        object-fit: cover;
+        top: 20vh !important;
+        position: absolute !important;
+        object-position: 50% 50% !important;
+    }
+
+    .parallaxLayer#p4 {
+        width: 300vw;
+        object-fit: cover;
+        top: 35vh !important;
+        position: absolute !important;
+        object-position: 50% 50% !important;
+    }
+
+    .parallaxLayer#p5 {
+        width: 140vw;
+        object-fit: cover;
+        top: 40vh !important;
+        position: absolute !important;
+        object-position: 50% 50% !important;
+    }
+    .parallaxLayer#p6 {
+        opacity: 1;
+        object-fit: cover;
+        top: calc(10vw + 18em) !important;
+        position: absolute !important;
+        object-position: 50% 50% !important;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1600) {
 .parallaxLayer#p6 {
+    opacity: 1;
     object-fit: cover;
     top: calc(2vw + 12em) !important;
     position: absolute !important;
@@ -135,6 +191,7 @@
     object-position: 50% 50% !important;
 }
 .parallaxLayer#p6 {
+    opacity: 1;
     object-fit: cover;
     top: calc(35vw + 28em) !important;
     position: absolute !important;
@@ -161,6 +218,7 @@
     object-position: 50% 50% !important;
 }
 .parallaxLayer#p6 {
+    opacity: 1;
     object-fit: cover;
     top: calc(35vw + 28em) !important;
     position: absolute !important;
@@ -170,6 +228,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 .parallaxLayer#p6 {
+    opacity: 1;
     object-fit: cover;
     top: calc(30vw + 14em) !important;
     position: absolute !important;
@@ -179,6 +238,7 @@
 
 @media only screen and (min-width: 361px) and (max-width: 480px) {
 .parallaxLayer#p6 {
+    opacity: 1;
     object-fit: cover;
     top: calc(2vw + 20em) !important;
     position: absolute !important;
@@ -187,6 +247,7 @@
 }
 @media only screen and (max-width: 360px) {
     .parallaxLayer#p6 {
+        opacity: 1;
         object-fit: cover;
         top: calc(3vw + 10em) !important;
         position: absolute !important;

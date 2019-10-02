@@ -19,7 +19,7 @@
     -ms-transform: skewY(1deg);
     -o-transform: skewY(1deg);
     transform: skewY(1deg);
-    z-index: 4;
+    z-index: 50;
 }
 
 .firstline:first-child {
@@ -37,7 +37,7 @@
     -webkit-transform: skewX(-18deg);
     -ms-transform: skewX(-18deg);
     -o-transform: skewX(-18deg);
-    z-index: 4;
+    z-index: 50;
 }
 
 @keyframes lineAnimation{

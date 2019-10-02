@@ -6,12 +6,12 @@
 .intro {
     height: 100vh;
     width: 100vw;
-    z-index: 50;
+    z-index: 500;
     position: relative;
 }
 
 .particles {
-    height: 300%;
+    height: 200%;
  }
 
 .about {
@@ -28,7 +28,7 @@
     content: center;
     padding-left: 6em;
     height: 120vh;
-    z-index: 50;
+    z-index: 500;
     position: relative;
 }
 
@@ -37,7 +37,7 @@
     padding-left: 5em;
     padding-right: 5em;
     height: 90vh;
-    z-index: 50;
+    z-index: 500;
     position: relative;
 }
 
@@ -102,7 +102,7 @@
 .navMenu {
     position: fixed;
     left: 0.0625em;
-    top: calc(-2vw + 2.75em);
+    top: calc(-2vw + 2.85em);
     font-size: 2em;
     cursor: pointer;
     z-index: 5000;
@@ -122,9 +122,9 @@
 
 .navMenuBackground {
     position: fixed;
-    color: #fff;
+    color: #ffffff;
     z-index: 5000;
-    top: calc(-2vw + 1.95em);
+    top: calc(-2vw + 2em);
     left: -1em;
     width: calc(0.5vw + 4em);
     height: calc(-1vw + 8.4em);
@@ -165,7 +165,7 @@
 }
 
 .overlay-content {
-    color: #fff;
+    color: #ffffff;
     font-size: 4em;
     text-decoration: none;
     display: block;
@@ -211,7 +211,7 @@
 /* Main Modal css ------------------------------------------ */
 .btn_terms {
     background: transparent;
-    color: #fff;
+    color: #ffffff;
     display: inline-block;
     font-size: 1em;
     padding: 0.75em 1em;
@@ -362,7 +362,7 @@
 .close_contact {
     font-family: Arial, Helvetica, sans-serif;
     background: #b60015;
-    color: #fff;
+    color: #ffffff;
     line-height: 25px;
     position: absolute;
     right: calc(3vw + -2.5em);
@@ -399,6 +399,10 @@
 .footer .col {
     margin-left: 4em;
     display: inline-block;
+}
+
+#personal_photo {
+    right: 20em;
 }
 
 .footer .col h1 {
@@ -486,11 +490,47 @@ ul#socialbuttons li:hover a img {
 }
 
 /* monitor media styling ------------------- */
-@media only screen and (min-width: 1026px) {
+@media only screen and (min-width: 1601px) {
+
+    .navMenu {
+        position: fixed;
+        top: 10vh;
+    }
+
+    .navMenuBackground {
+        position: fixed;
+        top: 5vh
+    }
+
+    .skills {
+        clear: both;
+        content: center;
+        padding-left: 6em;
+        height: 80vh;
+        z-index: 50;
+        position: relative;
+    }
+    .projects {
+        clear: both;
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 70vh;
+        z-index: 50;
+        position: relative;
+    }
+
+    .parallax {
+        clear: both;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1600px) {
     .contain {
         width: 100vw;
         margin: 0 auto;
     }
+
     .intro {
         height: 100vh;
         width: 100vw;

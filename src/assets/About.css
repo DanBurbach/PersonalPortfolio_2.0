@@ -6,6 +6,7 @@
 .about_item {
     float: left;
     width: 45%;
+    padding-top: 2em;
 }
 
 .about_wrapper:after {
@@ -23,7 +24,7 @@
 /* about me section ------------------------------ */
 
 .about_me h4 {
-    color: #ecf0f1;
+    color: #ffffff;
     font-family: 'Permanent Marker',
         cursive;
     position: relative;
@@ -46,7 +47,7 @@
 }
 
 .about_me h3 {
-    color: #ecf0f1;
+    color: #ffffff;
     font-family: 'Montserrat',
         sans-serif;
     font-weight: 800;
@@ -71,7 +72,7 @@
 }
 
 .about_me {
-    color: #ecf0f1;
+    color: #ffffff;
     text-shadow: 1px -1px 1px #242424;
     font-size: calc(0.00125vw + 0.9em);
     z-index: 50;

@@ -14,7 +14,7 @@ import ParallaxWallpaper from '../Projects/Parallax_Wallpaper';
 import TermsAndConditions from './../../assets/TermsAndConditions.jsx';
 
 import './../../assets/Main.css';
-import './../../assets/Timeline.css'
+// import './../../assets/Timeline.css'
 
 
 class Main extends Component {
@@ -246,7 +246,9 @@ class Main extends Component {
                       </div>
 
                       <div className="col social">
-                        <PersonalPhoto />
+                        <div id="personal_photo">
+                          <PersonalPhoto />
+                        </div>
                       </div>
 
                       <div className="clearfix"></div>

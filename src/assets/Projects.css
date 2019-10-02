@@ -13,7 +13,7 @@
 }
 
 .gallery_header h2 {
-    color: #ecf0f1;
+    color: #ffffff;
     font-family: 'Montserrat',
     sans-serif;
     font-weight: 800;
@@ -37,7 +37,7 @@
 }
 
 .galleryItem .galleryTitle h3 {
-    color: #ecf0f1;
+    color: #ffffff;
     font-family: 'Montserrat',
     sans-serif;
     font-weight: 800;
@@ -62,7 +62,7 @@
 }
 
 .galleryItem p {
-    color: #ecf0f1;
+    color: #ffffff;
     text-shadow: 2px -2px 3px #2b2b2b;
 }
 
