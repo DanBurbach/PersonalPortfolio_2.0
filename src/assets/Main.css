@@ -1,5 +1,4 @@
 .main_container {
-    overflow: hidden;
     z-index: 2;
     background: linear-gradient(#000, #080b1b, #161e49, #1400cc, #87ceeb, skyblue, rgb(13, 80, 13), #000000)
 }
