@@ -88,13 +88,12 @@
 
 @media only screen and (min-width: 1601px) {
     .parallaxLayer#p1 {
-        width:140vw;
         top: -5vh !important;
         position: center !important;
         background-image: url("https://github.com/DanBurbach/PersonalPortfolio_2.0/blob/master/src/assets/parallax_images/layer_1.png?raw=true");
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 0.60;
+        opacity: 0;
         object-fit: cover;
         object-position: 50% 50% !important;
     }
