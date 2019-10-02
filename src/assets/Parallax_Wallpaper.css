@@ -101,7 +101,7 @@
     .parallaxLayer#p2 {
         width: 140vw;
         object-fit: cover;
-        top: 45vh !important;
+        top: 55vh !important;
         position: center !important;
         object-position: 50% 50% !important;
     }
@@ -109,7 +109,7 @@
     .parallaxLayer#p3 {
         width: 140vw;
         object-fit: cover;
-        top: 20vh !important;
+        top: 25vh !important;
         position: absolute !important;
         object-position: 50% 50% !important;
     }
@@ -117,7 +117,7 @@
     .parallaxLayer#p4 {
         width: 300vw;
         object-fit: cover;
-        top: 35vh !important;
+        top: 40vh !important;
         position: absolute !important;
         object-position: 50% 50% !important;
     }
@@ -125,14 +125,14 @@
     .parallaxLayer#p5 {
         width: 140vw;
         object-fit: cover;
-        top: 40vh !important;
+        top: 45vh !important;
         position: absolute !important;
         object-position: 50% 50% !important;
     }
     .parallaxLayer#p6 {
         opacity: 1;
         object-fit: cover;
-        top: calc(10vw + 18em) !important;
+        top: calc(12vw + 20em) !important;
         position: absolute !important;
         object-position: 50% 50% !important;
     }
