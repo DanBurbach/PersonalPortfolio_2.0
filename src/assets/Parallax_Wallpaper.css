@@ -132,7 +132,7 @@
     .parallaxLayer#p6 {
         opacity: 1;
         object-fit: cover;
-        top: calc(15vw + 13em) !important;
+        top: calc(5vw + 29em) !important;
         position: absolute !important;
         object-position: 50% 50% !important;
     }
