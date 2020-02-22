@@ -16,6 +16,70 @@ class Projects extends Component {
           <div className="galleryItem">
             <div className="gallery_container">
               <img
+                src="https://github.com/DanBurbach/Acervus_Game/blob/master/src/assets/Stagnant%20readme%20splash%20image.png?raw=true"
+                alt="Acervus Game"
+              />
+              <div className="galleryTitle">
+                <h3>Acervus Game</h3>
+              </div>
+              <div className="galleryOverlay" />
+              <div className="galleryDescription">
+                <p>
+                  Matter.js and React.js balancing game. Points scored on
+                  rendered objects, points deducted on fallen objects. Uses
+                  Matter.js to handle gravity and object generation physics.
+                </p>
+                <p>React.js, Matter.js, CSS3, and HTML5</p>
+              </div>
+              <div className="galleryButtonGroup">
+                <div className="galleryButtonSource">
+                  <a href="https://github.com/DanBurbach/Acervus_Game">
+                    Source Code
+                  </a>
+                </div>
+                <div className="galleryButtonLaunched">
+                  <a href="https://practical-jackson-28fb60.netlify.com/">
+                    Launched Site
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="galleryItem">
+            <div className="gallery_container">
+              <img
+                src="https://github.com/DanBurbach/MapBox_AutoComplete_React.js/blob/master/src/assets/AutoCompleteJS_Main.png?raw=true"
+                alt="MapBox AutoComplete Location Finder"
+              />
+              <div className="galleryTitle">
+                <h3>MapBox AutoComplete Location Finder</h3>
+              </div>
+              <div className="galleryOverlay" />
+              <div className="galleryDescription">
+                <p>
+                  Reusable text autocomplete which consumes an API call in
+                  React.js. Response is then sent to MapBox Geocoding API for
+                  latitude and longitude and returned in Mapbox-gl-js for
+                  location display inside map display.
+                </p>
+                <p>
+                  React.js, Mapbox-gl-js, Mapbox-Geocoding, MapBox-API, CSS3, HTML5, and API calls.
+                </p>
+              </div>
+              <div className="galleryButtonGroup">
+                <div className="galleryButtonSource">
+                  <a href="https://github.com/DanBurbach/MapBox_AutoComplete_React.js">
+                    Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="galleryItem">
+            <div className="gallery_container">
+              <img
                 src="https://raw.githubusercontent.com/DanBurbach/Coding-Against-Humility/master/src/assets/images/CAH_MainScreen.png"
                 alt="Coding Against Humility"
               />
